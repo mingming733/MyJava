@@ -139,6 +139,7 @@ public class Myclass {
         System.out.println(Arrays.toString(arr1));
 //some change for git
         //change on the master
+        //commit7 master
     }
 
 }
