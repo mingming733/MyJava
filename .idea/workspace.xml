@@ -2,39 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e55770b9-cc15-45b5-9a80-148e5675de70" name="Default" comment="m//t">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/CalculatorIII.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ClassicSingleton.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/CompnayTree.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Connection.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/GrayCode.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/HighFive.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/InsiderTrader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Intuit.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/KNearestPoint.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/KthNearest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/LRUCache.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ListNode.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MaxSubTree.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mst.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MyHeap.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MyQueue.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Num.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/NumberToWord.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OrderDependencySolution.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PaymentCardTypeEnum.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Point.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Repeat.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Solution.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/SummaryRanges.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/SurroundingRegion.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Trie.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/TwoSumIII.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Unique_binary_search_trees_ii.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/WindowSum.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/WordLadderII.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wordsearch.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/Myclass$findMedianFromDataStream.class" afterPath="$PROJECT_DIR$/out/production/MyJava/Myclass$findMedianFromDataStream.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MaxStack.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/DataPoint.class" afterPath="$PROJECT_DIR$/out/production/MyJava/DataPoint.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/Enter.class" afterPath="$PROJECT_DIR$/out/production/MyJava/Enter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/Interval.class" afterPath="$PROJECT_DIR$/out/production/MyJava/Interval.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/KClosestPoint_Test.class" afterPath="$PROJECT_DIR$/out/production/MyJava/KClosestPoint_Test.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/ListNode.class" afterPath="$PROJECT_DIR$/out/production/MyJava/ListNode.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/ListNodeComparator.class" afterPath="$PROJECT_DIR$/out/production/MyJava/ListNodeComparator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/MatrixComparator.class" afterPath="$PROJECT_DIR$/out/production/MyJava/MatrixComparator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/MyThread.class" afterPath="$PROJECT_DIR$/out/production/MyJava/MyThread.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/Myclass.class" afterPath="$PROJECT_DIR$/out/production/MyJava/Myclass.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/Pair.class" afterPath="$PROJECT_DIR$/out/production/MyJava/Pair.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/Position.class" afterPath="$PROJECT_DIR$/out/production/MyJava/Position.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/Rect.class" afterPath="$PROJECT_DIR$/out/production/MyJava/Rect.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/TreeLinkNode.class" afterPath="$PROJECT_DIR$/out/production/MyJava/TreeLinkNode.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/TreeNode.class" afterPath="$PROJECT_DIR$/out/production/MyJava/TreeNode.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/UnionFind.class" afterPath="$PROJECT_DIR$/out/production/MyJava/UnionFind.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Myclass.java" afterPath="$PROJECT_DIR$/src/Myclass.java" />
     </list>
@@ -61,14 +44,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Myclass.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Myclass.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Myclass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="2664" column="71" selection-start-line="2664" selection-start-column="71" selection-end-line="2664" selection-end-column="71" />
+            <state relative-caret-position="225">
+              <caret line="2893" column="0" selection-start-line="2893" selection-start-column="0" selection-end-line="2893" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MaxStack.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/MaxStack.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -140,10 +133,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="109" />
-    <option name="y" value="23" />
-    <option name="width" value="1309" />
-    <option name="height" value="789" />
+    <option name="x" value="180" />
+    <option name="y" value="127" />
+    <option name="width" value="904" />
+    <option name="height" value="645" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -170,6 +163,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -202,65 +197,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyJava" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyJava" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SummaryRanges.java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyJava" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyJava" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Myclass.java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyJava" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyJava" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Intuit.java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -882,30 +821,34 @@
       <workItem from="1512448688689" duration="2418000" />
       <workItem from="1512762482912" duration="867000" />
       <workItem from="1512867369203" duration="8061000" />
-      <workItem from="1513032194303" duration="7572000" />
+      <workItem from="1513032194303" duration="14504000" />
+      <workItem from="1513102278448" duration="25020000" />
+      <workItem from="1513701212625" duration="908000" />
+      <workItem from="1513718808142" duration="4111000" />
+      <workItem from="1513812152678" duration="3398000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="578745000" />
+    <option name="totallyTimeSpent" value="619114000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="109" y="23" width="1309" height="789" extended-state="0" />
-    <editor active="false" />
+    <frame x="180" y="127" width="904" height="645" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32424676" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32368898" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2991453" sideWeight="0.5028612" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2625538" sideWeight="0.49713877" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26220614" sideWeight="0.49713877" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32907802" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.6657102" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6657102" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21862668" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21809745" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1054,12 +997,30 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Myclass.java</url>
-          <line>2658</line>
+          <line>2657</line>
           <properties />
-          <option name="timeStamp" value="263" />
+          <option name="timeStamp" value="267" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Myclass.java</url>
+          <line>2775</line>
+          <properties />
+          <option name="timeStamp" value="274" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Myclass.java</url>
+          <line>2793</line>
+          <properties />
+          <option name="timeStamp" value="276" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Myclass.java</url>
+          <line>2820</line>
+          <properties />
+          <option name="timeStamp" value="281" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="264" />
+      <option name="time" value="282" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1068,13 +1029,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/NumberToWord.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Myclass.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1435,10 +1389,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="10" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="10" />
-          <folding>
-            <element signature="e#303#304#0" expanded="false" />
-            <element signature="e#348#349#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1467,11 +1417,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Myclass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="2664" column="71" selection-start-line="2664" selection-start-column="71" selection-end-line="2664" selection-end-column="71" />
+        <state relative-caret-position="225">
+          <caret line="2893" column="0" selection-start-line="2893" selection-start-column="0" selection-end-line="2893" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MaxStack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>

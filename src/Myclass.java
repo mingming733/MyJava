@@ -2642,60 +2642,59 @@ public class Myclass {
 
     public List<List<String>> findLadders(String beginWord, String endWord, List<String> wordList) {
         HashSet<String> dict = new HashSet<>();
-        wordList.add(beginWord);
         for(String word : wordList){
             dict.add(word);
         }
-        HashMap<String, Integer> levels = new HashMap<>();
+        dict.add(endWord);
+        dict.add(beginWord);
         List<List<String>> ladders = new ArrayList<>();
         List<String> ladder = new ArrayList<>();
-        bfs(dict, levels, beginWord, endWord);
-        dfs(dict, levels, endWord, beginWord, ladders, ladder);
+        HashMap<String, Integer> distance = new HashMap<>();
+        bfs(beginWord, endWord, distance, dict);
+        dfs(endWord, beginWord, distance, ladders, ladder, dict);
         return ladders;
     }
-    private void dfs(HashSet<String> dict, HashMap<String, Integer> levels, String beginWord, String endWord, List<List<String>> ladders, List<String> ladder){
+    private void dfs(String beginWord, String endWord, HashMap<String, Integer> distance, List<List<String>> ladders, List<String> ladder, HashSet<String> dict){
         ladder.add(0, beginWord);
         if(beginWord.equals(endWord)){
             ladders.add(new ArrayList<>(ladder));
-            return;
         }
         List<String> neighbours = findNeighbours(beginWord, dict);
-        for(String neighbour: neighbours){
-            if(levels.containsKey(neighbour) && levels.get(neighbour) < levels.get(beginWord)){
-                dfs(dict, levels, neighbour, endWord, ladders, ladder);
+        for(String neighbour : neighbours){
+            if(distance.containsKey(neighbour) && distance.get(neighbour) < distance.get(beginWord)){
+                dfs(neighbour, endWord, distance, ladders, ladder, dict);
             }
         }
         ladder.remove(0);
     }
-    private void bfs(HashSet<String> dict, HashMap<String, Integer> levels,  String beginWord, String endWord){
-        HashSet<String> visited = new HashSet<>();
+
+    private void bfs(String beginWord, String endWord, HashMap<String, Integer> distance, HashSet<String> dict){
         Queue<String> queue = new LinkedList<>();
-        queue.offer(beginWord);
-        visited.add(beginWord);
         int level = 0;
+        queue.offer(beginWord);
+        distance.put(beginWord, 0);
         while(!queue.isEmpty()){
-            int size = queue.size();
             level++;
+            int size = queue.size();
             for(int i = 0; i < size; i++){
                 String word = queue.poll();
-                levels.put(word, level);
                 List<String> neighbours = findNeighbours(word, dict);
                 for(String neighbour : neighbours){
-                    if(!visited.contains(neighbour)){
+                    if(!distance.containsKey(neighbour)){
+                        distance.put(neighbour, level);
                         queue.offer(neighbour);
-                        visited.add(neighbour);
                     }
                 }
             }
+
         }
     }
-
     private List<String> findNeighbours(String word, HashSet<String> dict){
         List<String> result = new ArrayList<>();
         for(int i = 0; i < word.length(); i++){
             for(char c = 'a'; c < 'z'; c++){
                 if(c != word.charAt(i)){
-                    String newWord = replace(word, i, c);
+                    String newWord = replace(word, c, i);
                     if(dict.contains(newWord)){
                         result.add(newWord);
                     }
@@ -2704,15 +2703,199 @@ public class Myclass {
         }
         return result;
     }
-    private String replace(String word, int index, char c){
+    private String replace(String word, char c, int index){
         char[] newWord = word.toCharArray();
         newWord[index] = c;
         return new String(newWord);
     }
+    public int findValley(int[][] map){
+        int m = map.length;
+        int n = map[0].length;
+        boolean[][] visited = new boolean[m][n];
+        int count = 0;
+        Comparator comparator = new CoordComparator();
+        PriorityQueue<Coordinate1> points = new PriorityQueue<>(m * n, comparator);
+        for(int i = 0; i < map.length; i++){
+            for(int j = 0; j < map[0].length; j++){
+                points.offer(new Coordinate1(i, j, map[i][j]));
+            }
+        }
+        while(!points.isEmpty()){
+            Coordinate1 curr = points.poll();
+            if(!visited[curr.x][curr.y]){
+                count++;
+                bfs1(visited, map, m, n, curr);
+            }
+        }
+        return count;
+    }
+    private void bfs1(boolean[][] visited, int[][] map, int m, int n, Coordinate1 point){
+        int[] horiz = new int[]{1, 0, -1, 0};
+        int[] vertic = new int[]{0, 1, 0, -1};
+        Queue<Coordinate1> queue = new LinkedList<>();
+        queue.offer(point);
+        while(!queue.isEmpty()){
+            Coordinate1 curr = queue.poll();
+            for(int i = 0; i < 4; i++){
+                int nx = curr.x + horiz[i];
+                int ny = curr.y + vertic[i];
+                if(nx >= 0 && nx < m && ny >=0 && ny < n && !visited[nx][ny]){
+                    if(map[nx][ny] >= map[curr.x][curr.y]){
+                        visited[nx][ny] = true;
+                        queue.offer(new Coordinate1(nx, ny));
+                    }
+                }
+            }
+        }
+    }
+
+    public int closestValue2ndShua(TreeNode root, double target) {
+        int closest = root.val;
+        while(root != null){
+            closest = Math.abs(root.val - target) < Math.abs(closest - target) ? root.val : closest;
+            if(root.val > target){
+                root = root.left;
+            }else if(root.val < target){
+                root = root.right;
+            }else{
+                return root.val;
+            }
+        }
+        return closest;
+    }
+    int closest;
+    public int closestValue2ndShuaRecursion(TreeNode root, double target) {
+        closest = root.val;
+        closestHelper(root, target);
+        return closest;
+    }
+    private void closestHelper(TreeNode root, double target){
+        if(root == null){
+            return;
+        }
+        closest = Math.abs(target - closest) < Math.abs(target - root.val) ? closest : root.val;
+        if(root.val > target){
+            closestHelper(root.left, target);
+        }else if(root.val < target){
+            closestHelper(root.right, target);
+        }else{
+            return;
+        }
+    }
+    public List<Integer> closestKValues(TreeNode root, double target, int k) {
+        Deque<Integer> closests = new LinkedList<>();
+        Stack<TreeNode> stack = new Stack<>();
+        TreeNode curr = root;
+        while(curr != null || !stack.isEmpty()){
+            while(curr != null){
+                stack.push(curr);
+                curr = curr.left;
+            }
+            curr = stack.pop();
+            if(closests.size() == k){
+                if(Math.abs(closests.peekFirst() - target) < Math.abs(curr.val - target)){
+                    return (List<Integer>) closests;
+                }
+                closests.pollFirst();
+            }
+            closests.offerLast(curr.val);
+            curr = curr.right;
+        }
+        return (List<Integer>) closests;
+    }
+// 给一个array,找出里面所有的sub array,和等于某个数
+    public List<List<Integer>> targetSum(List<Integer> nums, int sum){
+        int[] preSum = new int[nums.size()];
+        List<List<Integer>> results = new ArrayList<>();
+        preSum[0] = nums.get(0);
+        for(int i = 1; i < nums.size(); i++){
+            preSum[i] = preSum[i - 1] + nums.get(i);
+        }
+        HashMap<Integer, Integer> preExist = new HashMap<>();
+        for(int i = 0; i < preSum.length; i++){
+            if(preExist.containsKey(preSum[i] - sum)){
+                results.add(addToResult(nums, preExist.get(preSum[i] - sum) + 1, i));
+            }
+            preExist.put(preSum[i], i);
+        }
+        return results;
+    }
+    private List<Integer> addToResult(List<Integer> nums, int start, int end){
+        List<Integer> result =  new ArrayList<>();
+        for(int i = start; i <= end; i++){
+            result.add(nums.get(i));
+        }
+        return result;
+    }
+
+    ////给一个set of integers，给一个 target number，要求找出 所有的subset，每个set里面的数字之和等于 target number。
+    //先写一个subset的代码,然后在上面做一些改动,见subsetSum
+    public List<List<Integer>> subset(int[] nums){
+        List<Integer> subset = new ArrayList<>();
+        List<List<Integer>> subsets = new ArrayList<>();
+        helper(nums, 0, subset, subsets);
+        return subsets;
+    }
+    private void helper(int[] nums, int pos, List<Integer> subset, List<List<Integer>> subsets){
+
+        for(int i = pos; i < nums.length; i++){
+            subset.add(nums[i]);
+            subsets.add(new ArrayList<>(subset));
+            helper(nums, i + 1, subset, subsets);
+            subset.remove(subset.size() - 1);
+        }
+
+    }
+    public List<List<Integer>> subsetSum(int[] nums, int sum){
+        List<Integer> subset = new ArrayList<>();
+        List<List<Integer>> subsets = new ArrayList<>();
+        helper1(nums, 0, subset, subsets, sum);
+        return subsets;
+    }
+    private void helper1(int[] nums, int pos, List<Integer> subset, List<List<Integer>> subsets, int sum){
+        for(int i = pos; i < nums.length; i++){
+            subset.add(nums[i]);
+            if(sum(subset) == sum){
+                subsets.add(new ArrayList<>(subset));
+            }
+            helper1(nums, i + 1, subset, subsets, sum);
+            subset.remove(subset.size() - 1);
+        }
+    }
+    private int sum(List<Integer> subset){
+        int sum = 0;
+        for(Integer num : subset){
+            sum += num;
+        }
+        return sum;
+    }
+    public int depthSumInverse(List<NestedInteger> nestedList){
+        Queue<List<NestedInteger>> queue = new LinkedList<>();
+        queue.offer(nestedList);
+        int weighted = 0;
+        int unWeighted = 0;
+        while(!queue.isEmpty()){
+            int size = queue.size();
+            for(int i = 0; i < size; i++){
+                List<NestedInteger> curr = queue.poll();
+                for(NestedInteger child : curr){
+                    if(child.isInteger()){
+                        unWeighted += child.getInteger();
+                    }else{
+                        queue.offer(child.getList());
+                    }
+                }
+            }
+            weighted += unWeighted;
+        }
+        return weighted;
+    }
+
+
     public static void main(String[] args) {
         Myclass mc = new Myclass();
-        List<String> wordList = new ArrayList<>(Arrays.asList("hot","dot","dog","lot","log","cog"));
-        System.out.print(mc.findLadders("hit", "cog", wordList));
+        int[] nums = new int[]{1,2,3};
+        System.out.print(mc.subsetSum(nums, 5));
 
     }
     public void doTheWork() {
@@ -2883,3 +3066,39 @@ class Interval{
         this.end = end;
     }
 }
+class Coordinate1{
+    int x;
+    int y;
+    int val;
+    public Coordinate1(int x, int y){
+        this.x = x;
+        this.y = y;
+    }
+    public Coordinate1(int x, int y, int val){
+        this.x = x;
+        this.y = y;
+        this.val = val;
+    }
+}
+class CoordComparator implements Comparator<Coordinate1>{
+    public int compare(Coordinate1 c1, Coordinate1 c2){
+        return c1.val - c2.val;
+    }
+}
+
+ interface NestedInteger {
+
+             // @return true if this NestedInteger holds a single integer,
+           // rather than a nested list.
+    public boolean isInteger();
+
+    // @return the single integer that this NestedInteger holds,
+              // if it holds a single integer
+             // Return null if this NestedInteger holds a nested list
+   public Integer getInteger();
+
+              // @return the nested list that this NestedInteger holds,
+              // if it holds a nested list
+              // Return null if this NestedInteger holds a single integer
+    public List<NestedInteger> getList();
+ }
