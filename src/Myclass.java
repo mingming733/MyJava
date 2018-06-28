@@ -1,5 +1,5 @@
-import com.sun.javafx.scene.layout.region.Repeat;
 
+import java.io.UnsupportedEncodingException;
 import java.lang.reflect.Array;
 import java.math.BigDecimal;
 import java.util.*;
@@ -532,19 +532,7 @@ public class Myclass {
         return new TreeNode(2);
     }
 
-    public int maxProduct(int[] nums) {
-        int minTemp = nums[0];
-        int maxTemp = nums[0];
-        int maxProduct = nums[0];
-        for (int i = 1; i < nums.length; i++) {
-            int a = maxTemp * nums[i];
-            int b = minTemp * nums[i];
-            minTemp = Math.min(Math.min(a, b), nums[i]);
-            maxTemp = Math.max(Math.max(a, b), nums[i]);
-            maxProduct = Math.max(maxProduct, maxTemp);
-        }
-        return maxProduct;
-    }
+
 
     public int[] twoSum(int[] nums, int target) {
         HashMap<Integer, Integer> map = new HashMap<>();
@@ -2891,12 +2879,515 @@ public class Myclass {
         return weighted;
     }
 
+    public List<List<Integer>> getFactors(int n){
+        List<List<Integer>> results = new ArrayList<>();
+        helperFactor(new ArrayList<Integer>(), results, n, 2);
+        return results;
+    }
+    private void helperFactor(List<Integer> result, List<List<Integer>> results, int n, int factor){
+        if(n == 1){
+            if(result.size() > 1){
+                results.add(new ArrayList<>(result));
+            }
+            return;
+        }
+        for(int i = factor; i <= n; i++){
+            if(n % i == 0){
+                result.add(i);
+                helperFactor(result, results, n / i, i);
+                result.remove(result.size() - 1);
+            }
+        }
+    }
+    public int shortestWordDistance(String[] words, String word1, String word2) {
+        int idx1 = -1;
+        int idx2 = -1;
+        int turn = 0;
+        int increment = word1.equals(word2) ? 1 : 0;
+        int dis = Integer.MAX_VALUE;
+        for(int i = 0; i < words.length; i++){
+            if(words[i].equals(word1) && turn % 2 == 0){
+                turn += increment;
+                idx1 = i;
+                if(idx2 != -1){
+                    dis = Math.min(dis, idx1 - idx2);
+                }
+            }else if(words[i].equals(word2)){
+                turn += increment;
+                idx2 = i;
+                if(idx1 != -1){
+                    dis = Math.min(dis, idx2 - idx1);
+                }
+            }
+        }
+        return dis;
+    }
+    public boolean canPartitionKSubsets(int[] nums, int k) {
+        int sum = 0;
+        for(int num : nums){
+            sum += num;
+        }
+        if(sum % k != 0){
+            return false;
+        }
+        return partihelper(nums, k, new boolean[nums.length], 0, 0, sum / k);
+    }
+    private boolean partihelper(int[] nums, int k, boolean[] visited, int pos, int curSum, int target){
+        if(k == 1){
+            return true;
+        }
+        if(curSum == target){
+            return partihelper(nums, k - 1, visited, 0, 0, target);
+        }
+        for(int i = pos; i < nums.length; i++){
+            if(!visited[i]){
+                visited[i] = true;
+                if(partihelper(nums, k, visited, i + 1, curSum + nums[i], target)){
+                    return true;
+                }
+                visited[i] = false;
+            }
+        }
+        return false;
+    }
+    public boolean canPlaceFlowers(int[] flowerbed, int n) {
+        int place = 0;
+        for(int i = 0; i < flowerbed.length; i++){
+            boolean pre = i == 0 || flowerbed[i - 1] == 0;
+            boolean next = i == flowerbed.length - 1 || flowerbed[i + 1] == 0;
+            if(pre && next){
+                count++;
+                flowerbed[i] = 1;
+            }
+        }
+        return count >= n;
+    }
 
+    public int maxPoints(Point2[] points) {
+        int max = 0;
+        for(int i = 0; i < points.length; i++){
+            HashMap<String, Integer> count = new HashMap<>();
+            Point2 p1 = points[i];
+            int samePos = 0;
+            for(int j = i; j < points.length; j++){
+                Point2 p2 = points[j];
+                int x = p1.x - p2.x;
+                int y = p1.y - p2.y;
+                if(x == 0 && y ==0){
+                    samePos++;
+                }else{
+                    int gcd = gcd(x, y);
+                    String slope = String.valueOf(x / gcd) + "," + String.valueOf(y / gcd);
+                    count.put(slope, count.getOrDefault(slope, 0) + 1);
+                }
+            }
+            int currMax = 0;
+            for(String slope : count.keySet()){
+                currMax = currMax > count.get(slope) ? currMax : count.get(slope);
+            }
+            currMax += samePos;
+            max = max > currMax ? max : currMax;
+        }
+        return max;
+    }
+    private int gcd(int x, int y){
+        if(y == 0){
+            return x;
+        }else{
+            return gcd(y, x % y);
+        }
+    }
+    static int[] findIsland(final int[][] a){
+        boolean[][] visited = new boolean[a.length][a[0].length];
+        int numOfIsland = 0;
+        List<Integer> areas = new ArrayList<>();
+        for(int i = 0; i < a.length; i++){
+            for(int j = 0; j < a[0].length; j++){
+                if(!visited[i][j] && a[i][j] == 1){
+                    visited[i][j] = true;
+                    numOfIsland++;
+                    areas.add(bfsHelper(a, visited, new Coordination(i, j)));
+                }
+            }
+        }
+        Collections.sort(areas);
+        int[] result = new int[numOfIsland + 1];
+        result[0] = numOfIsland;
+        for(int i = 1; i <= numOfIsland; i++){
+            result[i] = areas.get(numOfIsland - i);
+        }
+        return result;
+    }
+    static int bfsHelper(final int[][] a, boolean[][] visited, Coordination c){
+        int[] horizontal = new int[]{-1, 0, 1, 0};
+        int[] vertical = new int[]{0, 1, 0, -1};
+        int num = 0;
+        Queue<Coordination> queue = new LinkedList<>();
+        queue.offer(c);
+        while(!queue.isEmpty()){
+            Coordination curr = queue.poll();
+            num++;
+            for(int i = 0; i < 4; i++){
+                int x = curr.x + horizontal[i];
+                int y = curr.y + vertical[i];
+                if(x >= 0 && x < a.length && y >= 0 && y < a[0].length && !visited[x][y] && a[x][y] == 1){
+                    visited[x][y] = true;
+                    queue.offer(new Coordination(x, y));
+                }
+            }
+        }
+        return num;
+    }
+    public boolean canIWin(int maxChoosableInteger, int desiredTotal) {
+        int[] win = new int[desiredTotal + 1];
+        boolean[] visited = new boolean[maxChoosableInteger + 1];
+        return searchWin(maxChoosableInteger, desiredTotal, win, visited);
+    }
+    private boolean searchWin(int maxChoosableInteger, int desiredTotal, int[] win, boolean[] visited){
+        System.out.println(desiredTotal);
+        if(win[desiredTotal] != 0){
+            return win[desiredTotal] == 2;
+        }
+        if(maxChoosableInteger >= desiredTotal){
+            win[desiredTotal] = 2;
+            return true;
+        }
+        if((maxChoosableInteger * (maxChoosableInteger + 1) / 2) < desiredTotal){
+            return false;
+        }
+        for(int i = 1; i <= maxChoosableInteger; i++){
+            if(!visited[i]){
+                visited[i] = true;
+                if(!canIWin(maxChoosableInteger, desiredTotal - i)){
+                    win[desiredTotal] = 2;
+                    visited[i] = false;
+                    return true;
+                }
+                visited[i] = false;
+            }
+
+        }
+        win[desiredTotal] = 1;
+        return false;
+    }
+    int[] dp1;
+    boolean[] used;
+    public boolean canIWin1(int maxChoosableInteger, int desiredTotal) {
+        int sum = (1 + maxChoosableInteger) * maxChoosableInteger / 2;
+        if(sum < desiredTotal) {        //取完所有数，也达不到desiredTotal，无法赢得游戏
+            return false;
+        }
+        if(desiredTotal <= maxChoosableInteger) {      //第一步就可以获得胜利
+            return true;
+        }
+        dp1 = new int[1 << maxChoosableInteger];
+        Arrays.fill(dp1 , -1);
+        used = new boolean[maxChoosableInteger + 1];
+
+        return helper(desiredTotal);
+    }
+
+    public boolean helper(int desiredTotal){
+        System.out.println(desiredTotal);
+        if(desiredTotal <= 0) {
+            return false;
+        }
+        int key = format(used);         //把used数组转为十进制表示
+        if(dp1[key] == -1){
+            for(int i = 1; i < used.length; i++){    //枚举未选择的数
+                if(!used[i]){
+                    used[i] = true;
+
+                    if(!helper(desiredTotal - i)){
+                        dp1[key] = 1;
+                        used[i] = false;
+                        return true;
+                    }
+                    used[i] = false;
+                }
+            }
+            dp1[key] = 0;
+        }
+        return dp1[key] == 1;
+    }
+
+
+    public int format(boolean[] used){
+        int num = 0;
+        for(boolean b: used){
+            num <<= 1;
+            if(b) {
+                num |= 1;
+            }
+        }
+        return num;
+    }
+    public int[][] multiply(int[][] A, int[][] B) {
+        int m = A.length;
+        int p = A[0].length;
+        int q = B.length;
+        int n = B[0].length;
+        int[][] AB = new int[m][n];
+        for(int i = 0; i < m; i++){
+            for(int k = 0; k < p; k++){
+                if(A[i][k] != 0){
+                    for(int j = 0; j < n; j++){
+                        if(B[k][j] != 0){
+                            AB[i][j] += A[i][k] * B[k][j];
+                        }
+                    }
+                }
+            }
+        }
+        return AB;
+    }
+    public ListNode mergeKLists1(ListNode[] lists) {
+        ListNode dummy = new ListNode(0);
+        ListNode curr = dummy;
+        PriorityQueue<ListNode> pq = new PriorityQueue<ListNode>(lists.length, new NodeComparator());
+        for(int i = 0; i < lists.length; i++){
+            if(lists[i] != null){
+                pq.offer(lists[i]);
+            }
+        }
+        while(!pq.isEmpty()){
+            curr.next = pq.poll();
+            curr = curr.next;
+            if(curr.next != null){
+                pq.offer(curr.next);
+            }
+        }
+        return dummy.next;
+    }
+    public int maxProduct(int[] nums) {
+        int max = nums[0];
+        int min = nums[0];
+        int maxProduct = nums[0];
+        for(int i = 1; i < nums.length; i++){
+            max = Math.max(Math.max(max * nums[i], min * nums[i]), nums[i]);
+            min = Math.min(Math.min(max * nums[i], min * nums[i]), nums[i]);
+            maxProduct = Math.max(max, maxProduct);
+        }
+        return maxProduct;
+    }
+    public int searchrotated(int[] nums, int target) {
+        int start = 0;
+        int end = nums.length - 1;
+        while(start <= end){
+            int mid = start + (end - start) / 2;
+            if(target == nums[mid]){
+                return mid;
+            }
+            if(nums[mid] <= nums[start]){
+                if(target > nums[mid] && target < nums[start]){
+                    start = mid + 1;
+                }else{
+                    end = mid - 1;
+                }
+            }else{
+                if(target >= nums[start] && target < nums[mid]){
+                    end = mid - 1;
+                }else{
+                    start = mid + 1;
+                }
+            }
+        }
+        return -1;
+    }
+    public List<Integer> findClosestElements(int[] arr, int k, int x) {
+        ArrayList<Integer> kclosest = new ArrayList<>();
+        if(arr == null || arr.length == 0){
+            return kclosest;
+        }
+        if(k > arr.length){
+            for(int i = 0; i < arr.length; i++){
+                kclosest.add(arr[i]);
+            }
+            return kclosest;
+        }
+        int closest = findCloset(arr, x);
+        int start = closest;
+        int end = closest + 1;
+
+        while(k > 0 && start >= 0 && end < arr.length){
+            if(Math.abs(x - arr[start]) <= Math.abs(x - arr[end])){
+                kclosest.add(arr[start]);
+                start--;
+            }else{
+                kclosest.add(arr[end]);
+                end++;
+            }
+            k--;
+        }
+        int from = 0;
+        if(k > 0){
+            if(start == 0){
+                from = end;
+            }else{
+                from = start;
+            }
+        }
+        while(k > 0){
+            kclosest.add(arr[from++]);
+            k--;
+        }
+
+        return kclosest;
+    }
+    public int findCloset(int[] arr, int x){
+        int start = 0;
+        int end = arr.length - 1;
+        while(start + 1 < end){
+            int mid = start +(end - start) / 2;
+            if(arr[mid] == x){
+                return mid;
+            }
+            if(arr[mid] < x){
+                start = mid;
+            }else{
+                end = mid;
+            }
+        }
+        if(arr[start] >= x){
+            return start;
+        }else{
+            return end;
+        }
+    }
+    public List<List<Integer>> subsets(int[] nums) {
+        List<List<Integer>> sets = new ArrayList<>();
+        helper(sets, new ArrayList<Integer>(), nums, 0);
+        return sets;
+    }
+    private void helper (List<List<Integer>> sets, List<Integer> set, int[] nums, int index) {
+
+        if (index == nums.length) {
+            return;
+        }
+        sets.add(new ArrayList<>(set));
+        for (int i = index; i < nums.length; i++) {
+            set.add(nums[i]);
+            System.out.println(nums[i]);
+            helper(sets, set, nums, i + 1);
+            set.remove(set.size() - 1);
+        }
+    }
+
+    public void reverse(char[] str, int start, int end){
+        while(start < end){
+            char c = str[start];
+            str[start] = str[end];
+            str[end] = c;
+            start++;
+            end--;
+        }
+    }
+    public int jump(int[] nums) {
+        int[] steps = new int[nums.length];
+        steps[0] = 0;
+        for (int i = 1; i < nums.length; i++) {
+            int min = Integer.MAX_VALUE;
+            for (int j = i - 1; j >= 0; j--) {
+                if (j + nums[j] >= i) {
+                    min = min < steps[j] ? min : steps[j];
+                }
+            }
+            steps[i] = min + 1;
+        }
+        return steps[nums.length - 1];
+    }
+
+    public ListNode reverseLinkedListII (ListNode head) { // pair by pair
+        if (head == null || head.next == null) {
+            return head;
+        }
+        ListNode next = reverseLinkedListII(head.next.next);
+        ListNode newHead = head.next;
+        head.next = next;
+        newHead.next = head;
+        return newHead;
+    }
+    public int removeWhenDup(int[] nums) {
+        int slow = 0;
+        int fast = 0;
+        while (fast < nums.length) {
+            int begin = fast;
+            while (fast < nums.length && nums[fast] == nums[begin]) {
+                fast++;
+            }
+            if (fast - begin == 1) {
+                nums[slow] = nums[begin];
+                slow++;
+            }
+        }
+        return slow;
+    }
+    public List<Integer> spiral (int[][] nums) { // N X N matrix
+        List<Integer> result = new ArrayList<>();
+        spiralHelper(nums, result, 0, nums.length - 1, nums.length);
+        return result;
+    }
+    public void spiralHelper(int[][] nums, List<Integer> result, int offset, int size, int n) {
+        if (size == 0) {
+            result.add(nums[offset][offset]);
+            return;
+        }
+        if (size < 0){
+            return;
+        }
+        for (int i = 0; i < size; i++) {
+            result.add(nums[offset][offset + i]);
+        }
+        for (int i = 0; i < size; i++) {
+            result.add(nums[offset + i][n - offset - 1]);
+        }
+        for (int i = 0; i < size; i++) {
+            result.add(nums[n - offset - 1][n - offset - i - 1]);
+        }
+        for (int i = 0; i < size; i++) {
+            result.add(nums[n - offset - i - 1][offset]);
+        }
+        spiralHelper(nums, result, offset + 1, size - 2, n);
+    }
+    public List<Integer> spiralII (int[][] nums) { // M X N matrix
+        List<Integer> result = new ArrayList<>();
+        spiralHelper(nums, result, 0, nums.length - 1, nums.length);
+        return result;
+    }
+
+    public void rotate(int[][] matrix) {
+        if (matrix == null) {
+            return;
+        }
+        rotatehelper(matrix, 0, matrix.length);
+    }
+    public void rotatehelper(int[][] matrix, int offset, int size) {
+        if (size <= 1) {
+            return;
+        }
+        int n = matrix.length;
+        for (int i = offset; i < size; i++) {
+            int temp = matrix[offset][i];
+            matrix[offset][i] = matrix[n - i - 1][offset];
+            matrix[n - i - 1][offset] = matrix[n - offset - 1][n - i - 1];
+            matrix[n - offset - 1][n - i - 1] = matrix[i][n - offset - 1];
+            matrix[i][n - offset - 1] = temp;
+        }
+        rotatehelper(matrix, offset + 1, size - 2);
+    }
     public static void main(String[] args) {
         Myclass mc = new Myclass();
-        int[] nums = new int[]{1,2,3};
-        System.out.print(mc.subsetSum(nums, 5));
-
+        int[][] nums = new int[][]{{1,2,3},{4,5,6},{7,8,9}};
+        mc.rotate(nums);
+        System.out.print(nums);
+    }
+    static class Coordination{
+        int x;
+        int y;
+        public Coordination(int x, int y){
+            this.x = x;
+            this.y = y;
+        }
     }
     public void doTheWork() {
         Object o = null;
@@ -3102,3 +3593,18 @@ class CoordComparator implements Comparator<Coordinate1>{
               // Return null if this NestedInteger holds a single integer
     public List<NestedInteger> getList();
  }
+
+ class Point2{
+     int x;
+     int y;
+     public Point2(int x, int y){
+         this.x = x;
+         this.y = y;
+     }
+
+ }
+class NodeComparator implements Comparator<ListNode>{
+    public int compare(ListNode l1, ListNode l2){
+        return l1.val - l2.val;
+    }
+}
