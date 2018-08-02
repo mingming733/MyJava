@@ -1,84 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$USER_HOME$/Domain/domain-accountmanagement-eventbus/services/kafka/war/src/main/resources/META-INF/spring/kafka-state-context.xml" description="&lt;!-- 10M --&gt;" line="25" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="e55770b9-cc15-45b5-9a80-148e5675de70" name="Default" comment="m//t">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/CaughtTrader.class" afterPath="$PROJECT_DIR$/out/production/MyJava/CaughtTrader.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/ClassicSingleton.class" afterPath="$PROJECT_DIR$/out/production/MyJava/ClassicSingleton.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/CompnayTree.class" afterPath="$PROJECT_DIR$/out/production/MyJava/CompnayTree.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/Connection.class" afterPath="$PROJECT_DIR$/out/production/MyJava/Connection.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/CaptureLog.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/FindislandII.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OnePoint3.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/SmartQueue.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/UF.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/CoordComparator.class" afterPath="$PROJECT_DIR$/out/production/MyJava/CoordComparator.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/Coordinate1.class" afterPath="$PROJECT_DIR$/out/production/MyJava/Coordinate1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/DataPoint.class" afterPath="$PROJECT_DIR$/out/production/MyJava/DataPoint.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/Enter.class" afterPath="$PROJECT_DIR$/out/production/MyJava/Enter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/GrayCode.class" afterPath="$PROJECT_DIR$/out/production/MyJava/GrayCode.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/HighFive.class" afterPath="$PROJECT_DIR$/out/production/MyJava/HighFive.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/InsiderTrader$1.class" afterPath="$PROJECT_DIR$/out/production/MyJava/InsiderTrader$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/InsiderTrader$2.class" afterPath="$PROJECT_DIR$/out/production/MyJava/InsiderTrader$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/InsiderTrader.class" afterPath="$PROJECT_DIR$/out/production/MyJava/InsiderTrader.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/Interval.class" afterPath="$PROJECT_DIR$/out/production/MyJava/Interval.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/IntervalComparator.class" afterPath="$PROJECT_DIR$/out/production/MyJava/IntervalComparator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/Intuit.class" afterPath="$PROJECT_DIR$/out/production/MyJava/Intuit.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/KClosestPoint_Test.class" afterPath="$PROJECT_DIR$/out/production/MyJava/KClosestPoint_Test.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/KNearestPoint$1.class" afterPath="$PROJECT_DIR$/out/production/MyJava/KNearestPoint$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/KNearestPoint.class" afterPath="$PROJECT_DIR$/out/production/MyJava/KNearestPoint.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/KthNearest$1.class" afterPath="$PROJECT_DIR$/out/production/MyJava/KthNearest$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/KthNearest.class" afterPath="$PROJECT_DIR$/out/production/MyJava/KthNearest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/LRUCache$Node.class" afterPath="$PROJECT_DIR$/out/production/MyJava/LRUCache$Node.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/LRUCache.class" afterPath="$PROJECT_DIR$/out/production/MyJava/LRUCache.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/ListNode.class" afterPath="$PROJECT_DIR$/out/production/MyJava/ListNode.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/ListNodeComparator.class" afterPath="$PROJECT_DIR$/out/production/MyJava/ListNodeComparator.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/MatrixComparator.class" afterPath="$PROJECT_DIR$/out/production/MyJava/MatrixComparator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/MaxSubTree$ReturnType.class" afterPath="$PROJECT_DIR$/out/production/MyJava/MaxSubTree$ReturnType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/MaxSubTree.class" afterPath="$PROJECT_DIR$/out/production/MyJava/MaxSubTree.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/Mst$1.class" afterPath="$PROJECT_DIR$/out/production/MyJava/Mst$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/Mst$2.class" afterPath="$PROJECT_DIR$/out/production/MyJava/Mst$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/Mst.class" afterPath="$PROJECT_DIR$/out/production/MyJava/Mst.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/MyHeap.class" afterPath="$PROJECT_DIR$/out/production/MyJava/MyHeap.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/MyQueue.class" afterPath="$PROJECT_DIR$/out/production/MyJava/MyQueue.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/MyThread.class" afterPath="$PROJECT_DIR$/out/production/MyJava/MyThread.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/Myclass$1.class" afterPath="$PROJECT_DIR$/out/production/MyJava/Myclass$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/Myclass$2.class" afterPath="$PROJECT_DIR$/out/production/MyJava/Myclass$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/Myclass$3.class" afterPath="$PROJECT_DIR$/out/production/MyJava/Myclass$3.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/Myclass$Coordinate.class" afterPath="$PROJECT_DIR$/out/production/MyJava/Myclass$Coordinate.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/Myclass$Coordination.class" afterPath="$PROJECT_DIR$/out/production/MyJava/Myclass$Coordination.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/Myclass$findMedianFromDataStream.class" afterPath="$PROJECT_DIR$/out/production/MyJava/Myclass$findMedianFromDataStream.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/Myclass.class" afterPath="$PROJECT_DIR$/out/production/MyJava/Myclass.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/Node.class" afterPath="$PROJECT_DIR$/out/production/MyJava/Node.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/Num.class" afterPath="$PROJECT_DIR$/out/production/MyJava/Num.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/NumberToWord.class" afterPath="$PROJECT_DIR$/out/production/MyJava/NumberToWord.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/Order.class" afterPath="$PROJECT_DIR$/out/production/MyJava/Order.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/OrderDependency.class" afterPath="$PROJECT_DIR$/out/production/MyJava/OrderDependency.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/OrderDependencySolution.class" afterPath="$PROJECT_DIR$/out/production/MyJava/OrderDependencySolution.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/NodeComparator.class" afterPath="$PROJECT_DIR$/out/production/MyJava/NodeComparator.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/Pair.class" afterPath="$PROJECT_DIR$/out/production/MyJava/Pair.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/PaymentCardTypeEnum.class" afterPath="$PROJECT_DIR$/out/production/MyJava/PaymentCardTypeEnum.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/Point.class" afterPath="$PROJECT_DIR$/out/production/MyJava/Point.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/Point1.class" afterPath="$PROJECT_DIR$/out/production/MyJava/Point1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/PointComparator.class" afterPath="$PROJECT_DIR$/out/production/MyJava/PointComparator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/Pointx.class" afterPath="$PROJECT_DIR$/out/production/MyJava/Pointx.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/Point2.class" afterPath="$PROJECT_DIR$/out/production/MyJava/Point2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/Position.class" afterPath="$PROJECT_DIR$/out/production/MyJava/Position.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/QueueListNode.class" afterPath="$PROJECT_DIR$/out/production/MyJava/QueueListNode.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/Rect.class" afterPath="$PROJECT_DIR$/out/production/MyJava/Rect.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/Repeat.class" afterPath="$PROJECT_DIR$/out/production/MyJava/Repeat.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/Result.class" afterPath="$PROJECT_DIR$/out/production/MyJava/Result.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/Solution.class" afterPath="$PROJECT_DIR$/out/production/MyJava/Solution.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/SummaryRanges.class" afterPath="$PROJECT_DIR$/out/production/MyJava/SummaryRanges.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/SurroundingRegion.class" afterPath="$PROJECT_DIR$/out/production/MyJava/SurroundingRegion.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/Transaction.class" afterPath="$PROJECT_DIR$/out/production/MyJava/Transaction.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/TreeLinkNode.class" afterPath="$PROJECT_DIR$/out/production/MyJava/TreeLinkNode.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/TreeNode.class" afterPath="$PROJECT_DIR$/out/production/MyJava/TreeNode.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/Trie.class" afterPath="$PROJECT_DIR$/out/production/MyJava/Trie.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/Trienode.class" afterPath="$PROJECT_DIR$/out/production/MyJava/Trienode.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/TwoSumIII.class" afterPath="$PROJECT_DIR$/out/production/MyJava/TwoSumIII.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/UnionFind.class" afterPath="$PROJECT_DIR$/out/production/MyJava/UnionFind.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/Unique_binary_search_trees_ii.class" afterPath="$PROJECT_DIR$/out/production/MyJava/Unique_binary_search_trees_ii.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/WindowSum.class" afterPath="$PROJECT_DIR$/out/production/MyJava/WindowSum.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/WordLadderII.class" afterPath="$PROJECT_DIR$/out/production/MyJava/WordLadderII.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/Wordsearch.class" afterPath="$PROJECT_DIR$/out/production/MyJava/Wordsearch.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/noder.class" afterPath="$PROJECT_DIR$/out/production/MyJava/noder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyJava/returnValue.class" afterPath="$PROJECT_DIR$/out/production/MyJava/returnValue.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MaxStack.java" afterPath="$PROJECT_DIR$/src/MaxStack.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyJava.iml" afterPath="$PROJECT_DIR$/MyJava.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Myclass.java" afterPath="$PROJECT_DIR$/src/Myclass.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WordLadderII.java" afterPath="$PROJECT_DIR$/src/WordLadderII.java" />
     </list>
     <ignored path="MyJava.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -103,7 +64,30 @@
     <favorites_list name="MyJava" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Myclass.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Myclass.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="3414" column="18" selection-start-line="3414" selection-start-column="18" selection-end-line="3414" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CaptureLog.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CaptureLog.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2085">
+              <caret line="141" column="0" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -145,7 +129,6 @@
         <option value="$PROJECT_DIR$/repeat/Repeat.java" />
         <option value="$PROJECT_DIR$/src/SurroundingRegion.java" />
         <option value="$PROJECT_DIR$/src/Wordsearch.java" />
-        <option value="$PROJECT_DIR$/src/WordLadderII.java" />
         <option value="$PROJECT_DIR$/src/GrayCode.java" />
         <option value="$PROJECT_DIR$/src/Unique_binary_search_trees_ii.java" />
         <option value="$PROJECT_DIR$/src/PaymentCardTypeEnum.java" />
@@ -160,6 +143,12 @@
         <option value="$PROJECT_DIR$/src/CalculatorIII.java" />
         <option value="$PROJECT_DIR$/src/TwoSumIII.java" />
         <option value="$PROJECT_DIR$/src/MaxStack.java" />
+        <option value="$PROJECT_DIR$/src/SmartQueue.java" />
+        <option value="$PROJECT_DIR$/src/UF.java" />
+        <option value="$PROJECT_DIR$/src/FindislandII.java" />
+        <option value="$PROJECT_DIR$/src/WordLadderII.java" />
+        <option value="$PROJECT_DIR$/src/OnePoint3.java" />
+        <option value="$PROJECT_DIR$/src/CaptureLog.java" />
         <option value="$PROJECT_DIR$/src/Myclass.java" />
       </list>
     </option>
@@ -207,13 +196,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="MyJava" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -242,19 +236,19 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Domain/app-qe-unified-myaccount" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/json-simple-1.1.jar!/" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -916,39 +910,49 @@
       <workItem from="1529183215578" duration="11640000" />
       <workItem from="1529680626019" duration="2928000" />
       <workItem from="1530133530278" duration="620000" />
+      <workItem from="1530387450503" duration="4926000" />
+      <workItem from="1530637771789" duration="1949000" />
+      <workItem from="1530982822771" duration="6195000" />
+      <workItem from="1531609451535" duration="4014000" />
+      <workItem from="1532397007126" duration="1263000" />
+      <workItem from="1532399435542" duration="6271000" />
+      <workItem from="1532729391638" duration="4081000" />
+      <workItem from="1532889288862" duration="13000" />
+      <workItem from="1532922865894" duration="10772000" />
+      <workItem from="1533169516956" duration="2472000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="693795000" />
+    <option name="totallyTimeSpent" value="735751000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="789" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31994048" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2991453" sideWeight="0.5028612" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33868614" sideWeight="0.49713877" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33138686" sideWeight="0.49713877" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32842416" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6657102" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2811159" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26037195" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.459854" sideWeight="0.49713877" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.46497765" sideWeight="0.49713877" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32041728" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="true" internal_type="SLIDING" type="FLOATING" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1027,19 +1031,19 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Myclass.java</url>
-          <line>1638</line>
+          <line>1635</line>
           <properties />
           <option name="timeStamp" value="145" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Myclass.java</url>
-          <line>1658</line>
+          <line>1655</line>
           <properties />
           <option name="timeStamp" value="148" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Myclass.java</url>
-          <line>1951</line>
+          <line>1948</line>
           <properties />
           <option name="timeStamp" value="157" />
         </line-breakpoint>
@@ -1069,7 +1073,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Myclass.java</url>
-          <line>2070</line>
+          <line>2067</line>
           <properties />
           <option name="timeStamp" value="200" />
         </line-breakpoint>
@@ -1087,73 +1091,85 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Myclass.java</url>
-          <line>2645</line>
+          <line>2642</line>
           <properties />
           <option name="timeStamp" value="267" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Myclass.java</url>
-          <line>2763</line>
+          <line>2760</line>
           <properties />
           <option name="timeStamp" value="274" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Myclass.java</url>
-          <line>2781</line>
+          <line>2778</line>
           <properties />
           <option name="timeStamp" value="276" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Myclass.java</url>
-          <line>2808</line>
+          <line>2805</line>
           <properties />
           <option name="timeStamp" value="281" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Myclass.java</url>
-          <line>2894</line>
+          <line>2891</line>
           <properties />
           <option name="timeStamp" value="283" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Myclass.java</url>
-          <line>2979</line>
+          <line>2976</line>
           <properties />
           <option name="timeStamp" value="297" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Myclass.java</url>
-          <line>3046</line>
+          <line>3043</line>
           <properties />
           <option name="timeStamp" value="298" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Myclass.java</url>
-          <line>3168</line>
+          <line>3165</line>
           <properties />
           <option name="timeStamp" value="302" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Myclass.java</url>
-          <line>3180</line>
+          <line>3177</line>
           <properties />
           <option name="timeStamp" value="303" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <condition expression="i==3" language="JAVA" />
           <url>file://$PROJECT_DIR$/src/Myclass.java</url>
-          <line>3288</line>
+          <line>3285</line>
           <properties />
           <option name="timeStamp" value="306" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Myclass.java</url>
-          <line>3369</line>
+          <line>3366</line>
           <properties />
           <option name="timeStamp" value="309" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/FindislandII.java</url>
+          <line>19</line>
+          <properties />
+          <option name="timeStamp" value="320" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Myclass.java</url>
+          <line>3419</line>
+          <properties />
+          <option name="timeStamp" value="328" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="310" />
+      <option name="time" value="329" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1173,67 +1189,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/src.zip!/javax/swing/tree/TreeNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="930">
-          <caret line="85" column="11" selection-start-line="85" selection-start-column="11" selection-end-line="85" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/NumberToWord.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Myclass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/NumberToWord.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Myclass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/NumberToWord.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Myclass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1248,9 +1204,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6780">
           <caret line="454" column="41" selection-start-line="454" selection-start-column="41" selection-end-line="454" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1427,13 +1381,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/WordLadderII.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="46" selection-start-line="0" selection-start-column="0" selection-end-line="68" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/GrayCode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1466,20 +1413,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MyHeap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="24" column="47" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#814#815#0" expanded="false" />
-            <element signature="e#856#857#0" expanded="false" />
-            <element signature="e#879#880#0" expanded="false" />
-            <element signature="e#917#918#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Repeat.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
@@ -1495,13 +1428,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/LRUCache.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="10" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/CalculatorIII.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="645">
@@ -1509,37 +1435,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Myclass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="2860" column="62" selection-start-line="2860" selection-start-column="62" selection-end-line="2860" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/src.zip!/java/lang/StringBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="589">
           <caret line="195" column="18" selection-start-line="195" selection-start-column="18" selection-end-line="195" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#11950#0" expanded="false" />
-            <element signature="e#2871#2872#0" expanded="false" />
-            <element signature="e#2896#2897#0" expanded="false" />
-            <element signature="e#3272#3273#0" expanded="false" />
-            <element signature="e#3303#3304#0" expanded="false" />
-            <element signature="e#4161#4162#0" expanded="false" />
-            <element signature="e#4211#4212#0" expanded="false" />
-            <element signature="e#10229#10230#0" expanded="false" />
-            <element signature="e#10270#10271#0" expanded="false" />
-            <element signature="e#10337#10338#0" expanded="false" />
-            <element signature="e#10389#10390#0" expanded="false" />
-            <element signature="e#10445#10446#0" expanded="false" />
-            <element signature="e#10490#10491#0" expanded="false" />
-            <element signature="e#10561#10562#0" expanded="false" />
-            <element signature="e#10617#10618#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1547,44 +1446,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="589">
           <caret line="589" column="15" selection-start-line="589" selection-start-column="15" selection-end-line="589" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#56545#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#1327#1328#0" expanded="false" />
-            <element signature="e#1369#1370#0" expanded="false" />
-            <element signature="e#1588#1589#0" expanded="false" />
-            <element signature="e#1616#1617#0" expanded="false" />
-            <element signature="e#1874#1875#0" expanded="false" />
-            <element signature="e#1909#1910#0" expanded="false" />
-            <element signature="e#14779#14780#0" expanded="false" />
-            <element signature="e#14829#14830#0" expanded="false" />
-            <element signature="e#32344#32345#0" expanded="false" />
-            <element signature="e#32390#32391#0" expanded="false" />
-            <element signature="e#33359#33360#0" expanded="false" />
-            <element signature="e#33403#33404#0" expanded="false" />
-            <element signature="e#37123#37124#0" expanded="false" />
-            <element signature="e#37181#37182#0" expanded="false" />
-            <element signature="e#45857#45858#0" expanded="false" />
-            <element signature="e#45913#45914#0" expanded="false" />
-            <element signature="e#47867#47868#0" expanded="false" />
-            <element signature="e#47923#47924#0" expanded="false" />
-            <element signature="e#48805#48806#0" expanded="false" />
-            <element signature="e#48861#48862#0" expanded="false" />
-            <element signature="e#49747#49748#0" expanded="false" />
-            <element signature="e#49803#49804#0" expanded="false" />
-            <element signature="e#50693#50694#0" expanded="false" />
-            <element signature="e#50749#50750#0" expanded="false" />
-            <element signature="e#51393#51394#0" expanded="false" />
-            <element signature="e#51431#51432#0" expanded="false" />
-            <element signature="e#52207#52208#0" expanded="false" />
-            <element signature="e#52277#52278#0" expanded="false" />
-            <element signature="e#53047#53048#0" expanded="false" />
-            <element signature="e#53093#53094#0" expanded="false" />
-            <element signature="e#53792#53793#0" expanded="false" />
-            <element signature="e#53866#53867#0" expanded="false" />
-            <element signature="e#56512#56513#0" expanded="false" />
-            <element signature="e#56540#56541#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1592,7 +1453,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1606,6 +1466,95 @@
             <element signature="e#497#498#0" expanded="false" />
             <element signature="e#530#531#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SmartQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LRUCache.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-561">
+          <caret line="20" column="10" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MyHeap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="36" column="33" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UF.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="15" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WordLadderII.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Downloads/JSON-java-master.zip!/JSON-java-master/CookieList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Downloads/JSON-java-master.zip!/JSON-java-master/CDL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FindislandII.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="49" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OnePoint3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CaptureLog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2085">
+          <caret line="141" column="0" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Myclass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="3414" column="18" selection-start-line="3414" selection-start-column="18" selection-end-line="3414" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1666,6 +1615,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -1684,6 +1634,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>json-simple-1.1</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

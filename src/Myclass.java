@@ -1,7 +1,4 @@
 
-import java.io.UnsupportedEncodingException;
-import java.lang.reflect.Array;
-import java.math.BigDecimal;
 import java.util.*;
 
 
@@ -3375,11 +3372,57 @@ public class Myclass {
         }
         rotatehelper(matrix, offset + 1, size - 2);
     }
+    public List<List<Integer>> fourSum(int[] nums, int target) {
+        List<List<Integer>> results = new ArrayList<>();
+        if (nums == null || nums.length < 4) {
+            return results;
+        }
+        Arrays.sort(nums);
+        HashMap<Integer, Pair> map = new HashMap<>();
+        for (int j = 1; j < nums.length; j++) {
+            while ( j < nums.length - 1 && nums[j] == nums[j + 1]) {
+                j++;
+            }
+            for (int i = 0; i < j; i++) {
+                if (i != 0 && i < nums.length && nums[i] == nums[i - 1] && i != j - 1) {
+                    continue;
+                }
+                int partialSum = nums[i] + nums[j];
+                if (map.containsKey(target - partialSum) && map.get(target - partialSum).y < i) {
+                    results.add(new ArrayList<>(Arrays.asList(nums[map.get(target - partialSum).x],nums[map.get(target - partialSum).y], nums[i], nums[j])));
+                } else {
+                    map.put(partialSum, new Pair(i, j));
+                }
+            }
+        }
+        return results;
+    }
+    public String removeSpace (String str) { // skip all leading and duplicate space, add only 1 space in front of every word, laioffer stringI
+        int slow = 0;
+        int fast = 0;
+        int count = 0;
+        char [] chars = str.toCharArray();
+        while (fast  < str.length()) {
+            while (fast  < str.length() && chars[fast] == ' ') {
+                fast++;
+            }
+            if (count != 0 && fast != str.length()) {
+                chars[slow] = ' ';
+                slow++;
+            }
+            while (fast < str.length() && chars[fast] != ' ') {
+                chars[slow] = chars[fast];
+                fast++;
+                slow++;
+            }
+            count++;
+        }
+        return new String(Arrays.copyOfRange(chars, 0, slow));
+    }
     public static void main(String[] args) {
         Myclass mc = new Myclass();
-        int[][] nums = new int[][]{{1,2,3},{4,5,6},{7,8,9}};
-        mc.rotate(nums);
-        System.out.print(nums);
+        CaptureLog one = new CaptureLog();
+        System.out.println(mc.removeSpace("     "));
     }
     static class Coordination{
         int x;
