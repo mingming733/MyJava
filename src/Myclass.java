@@ -3397,7 +3397,7 @@ public class Myclass {
         }
         return results;
     }
-    public String removeSpace (String str) { // skip all leading and duplicate space, add only 1 space in front of every word, laioffer stringI
+    public String removeSpace(String str) { // skip all leading and duplicate space, add only 1 space in front of every word, laioffer stringI
         int slow = 0;
         int fast = 0;
         int count = 0;
@@ -3419,10 +3419,94 @@ public class Myclass {
         }
         return new String(Arrays.copyOfRange(chars, 0, slow));
     }
+
+//    public String removeDup(String str) {
+//        int slow = 1;
+//        char [] chars = str.toCharArray();
+//        for (int i = 1; i < str.length(); i++) {
+//            if (chars[slow - 1] != chars[i]) {
+//                chars[slow] = chars[i];
+//
+//            }
+//        }
+//
+//    }
+
+    public void printList(List<String> list) {
+        for (String str : list) {
+            System.out.print(str+ " ");
+        }
+    }
+    public String addBinary(String a, String b) {
+        int carry = 0;
+        StringBuilder result = new StringBuilder();
+        int index1 = a.length() - 1;
+        int index2 = b.length() - 1;
+        while (index1 >= 0 || index2 >= 0) {
+            int bit1 = index1 >= 0 ? a.charAt(index1) - '0' : 0;
+            int bit2 = index2 >= 0 ? b.charAt(index2) - '0' : 0;
+            System.out.println("bit1=" + bit1 + "  bit2=" + bit2 + "  carry" + carry);
+            carry = (bit1 + bit2 + carry) / 2;
+            result.insert(0, (bit1 + bit2 + carry) % 2);
+            index1--;
+            index2--;
+        }
+        if (carry == 1) {
+            result.insert(0, "1");
+        }
+        return result.toString();
+    }
+//    public boolean isNumber(String s) {
+//        // write your code here
+//        int i = 0;
+//        s = s.trim() + " ";    //why +" "?
+//        char[] sc = s.toCharArray();
+//        int len = s.length() - 1;
+//
+//        if (sc[i] == '+' || sc[i] == '-') {
+//            i++;
+//        }
+//        int nDigit = 0, nPoint = 0;
+//        while (Character.isDigit(sc[i]) || sc[i] == '.') {
+//            if (Character.isDigit(sc[i])) {
+//                nDigit++;
+//            }
+//            if (sc[i] == '.') {
+//                nPoint++;
+//            }
+//            i++;
+//        }
+//        if (nDigit <= 0 || nPoint > 1) {
+//            return false;
+//        }
+//
+//        if (sc[i] == 'e') {
+//            i++;
+//            if (sc[i] == '+' || sc[i] == '-') {
+//                i++;
+//            }
+//            if (i == len) {
+//                return false;
+//            }
+//            for (; i < len; i++) {
+//                if (!Character.isDigit(sc[i])) {
+//                    return false;
+//                }
+//            }
+//        }
+//        return i == len;
+//    }
+
     public static void main(String[] args) {
+        // type sout and press Tab to generate System.out.println automatically.
         Myclass mc = new Myclass();
-        CaptureLog one = new CaptureLog();
-        System.out.println(mc.removeSpace("     "));
+
+        GoogleRedBlueTree gt = new GoogleRedBlueTree();
+        gt.test();
+
+
+
+
     }
     static class Coordination{
         int x;
@@ -3598,6 +3682,14 @@ class Interval{
     public Interval(int start, int end){
         this.start = start;
         this.end = end;
+    }
+
+    @Override
+    public String toString() {
+        return "Interval{" +
+                "start=" + start +
+                ", end=" + end +
+                '}';
     }
 }
 class Coordinate1{

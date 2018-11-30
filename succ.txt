@@ -1,0 +1,26 @@
+17:43:33 ++ cp -rp target/site/jacoco/com.stubhub.domain.payment.ticketInsuranceListener.bootapp target/site/jacoco/com.stubhub.domain.payment.ticketInsuranceListener.bootapp.helper target/site/jacoco/com.stubhub.domain.payment.ticketInsuranceListener.bootapp.impl target/site/jacoco/index.html target/site/jacoco/jacoco-resources target/site/jacoco/jacoco-sessions.html target/site/jacoco/jacoco.csv target/site/jacoco/jacoco.xml /opt/jenkins-slaves/lightning/workspace/test-ticket-insurance-listener/test-reports/ticket-insurance-listener-0.pb_BUYAPI-2273.0-SNAPSHOT-slcq042/coverage
+17:43:33 [INFO] --- jacoco-maven-plugin:0.8.0:report (default-cli) @ com.stubhub.domain.payment.ticketinsurancelistener.bootapp ---
+17:43:22 ++ ssh -oPasswordAuthentication=no -ostricthostkeychecking=no -oConnectTimeout=10 -oConnectionAttempts=2 relmgt@slcq042joo001.slcq042.com 'sudo rm -f /opt/stubhub/bootapps/ticket-insurance-listener*/jacoco.exec'
+17:43:34 ++ '[' -e target/site/jacoco/index.html ']'
+17:43:32 [INFO] --- jacoco-maven-plugin:0.8.0:report (default-cli) @ com.stubhub.domain.payment.ticketinsurancelistener ---
+17:43:33 [INFO] --- jacoco-maven-plugin:0.8.0:report (default-cli) @ com.stubhub.domain.payment.ticketinsurancelistener.tests ---
+17:43:28 [INFO] Loading execution data file /opt/jenkins-slaves/lightning/workspace/test-ticket-insurance-listener/ticket-insurance-listener-0.pb_BUYAPI-2273.0-SNAPSHOT-slcq042/target/joo001.jacoco.exec
+17:43:33 [INFO] --- jacoco-maven-plugin:0.8.0:report (default-cli) @ com.stubhub.domain.payment.ticketinsurancelistener.intf ---
+17:43:21 ++ scp -p -oPasswordAuthentication=no -ostricthostkeychecking=no -oConnectTimeout=10 -oConnectionAttempts=2 'relmgt@slcq042joo001.slcq042.com:/opt/stubhub/bootapps/ticket-insurance-listener*/jacoco.exec' target/joo001.jacoco.exec
+17:43:16 ++ '[' '!' -f /opt/jenkins-slaves/lightning/workspace/test-ticket-insurance-listener/joo001.jacoco.exec ']'
+17:43:27 [INFO] --- jacoco-maven-plugin:0.8.0:merge (default-cli) @ dummy ---
+17:43:18 ++ curl -v 'http://slcq042joo001.slcq042.com:8090/jolokia/exec/org.jacoco:type=Runtime/dump(boolean)/true'
+17:43:24 + grep jacoco /opt/stubhub/bootapps/ticket-insurance-listener-0.pb_BUYAPI-2273.0-SNAPSHOT/ticket-insurance-listener.conf
+17:43:24 + sed -i '/jacocoagent.jar=jmx=true \$JAVA_OPTS/d' /opt/stubhub/bootapps/ticket-insurance-listener-0.pb_BUYAPI-2273.0-SNAPSHOT/ticket-insurance-listener.conf
+17:43:22 ++ cp -p target/joo001.jacoco.exec /opt/jenkins-slaves/lightning/workspace/test-ticket-insurance-listener
+17:43:26 ++ cp -p /nas/jenkins/citools/pom_jacoco_merge.xml .
+17:43:33 [INFO] Loading execution data file /opt/jenkins-slaves/lightning/workspace/test-ticket-insurance-listener/ticket-insurance-listener-0.pb_BUYAPI-2273.0-SNAPSHOT-slcq042/target/jacoco.exec
+17:43:28 [INFO] Writing merged execution data to /opt/jenkins-slaves/lightning/workspace/test-ticket-insurance-listener/ticket-insurance-listener-0.pb_BUYAPI-2273.0-SNAPSHOT-slcq042/target/jacoco.exec
+17:43:22 ++ ls -l target/joo001.jacoco.exec
+17:43:26 ++ mvn -f pom_jacoco_merge.xml org.jacoco:jacoco-maven-plugin:0.8.0:merge
+17:43:29 ++ mvn org.jacoco:jacoco-maven-plugin:0.8.0:report -Dmaven.repo.local=/nas/utl/devops/.m2 -Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true
+17:43:34 +++ grep -oh 'Total.*%' target/site/jacoco/index.html
+17:43:24 JAVA_OPTS="$JAVA_OPTS -javaagent:/nas/reg/jacocoagent.jar=jmx=true"
+17:43:22 -rw-r--r--. 1 jenkins ux-user 495205 Sep  1 00:40 target/joo001.jacoco.exec
+total number=24
+

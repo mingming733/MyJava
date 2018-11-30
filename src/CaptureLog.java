@@ -1,4 +1,5 @@
 import java.io.*;
+import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -55,7 +56,29 @@ public class CaptureLog {
         }
         // output
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
-        PrintStream out = new PrintStream(new FileOutputStream("success.txt"));
+        PrintStream out = new PrintStream(new FileOutputStream(getTimeStamp() + ".txt"));
+        for (String referenceNum : set) {
+            out.println(referenceNum);
+        }
+        System.setOut(out);
+        System.out.println("total number=" + count);
+    }
+    public void findJacoco (String path) throws Exception {
+        File file = new File(path);
+        BufferedReader br = new BufferedReader(new FileReader(file));
+        String str;
+        int count = 0;
+        Set<String> set = new HashSet<>();
+        while ((str = br.readLine()) != null) {
+            if (str.contains("jacoco")) {
+                String[] failedLine = str.split(" ");
+                set.add(str);
+                count++;
+            }
+        }
+        // output
+        BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+        PrintStream out = new PrintStream(new FileOutputStream(getTimeStamp() + ".txt"));
         for (String referenceNum : set) {
             out.println(referenceNum);
         }
@@ -72,14 +95,14 @@ public class CaptureLog {
         while (str != null) {
             int count = 999;
             StringBuilder sb = new StringBuilder();
-            sb.append("select buyer_order_id, reference_code, status, TRANS_TYPE from cc_trans where reference_code in (");
+            sb.append("select buyer_order_id, date_added, CC_SYSTEM from cc_trans where id in (");
             while (count > 0 && (str = br.readLine()) != null) {
                 sb.append("'").append(str).append("'").append(", ");
                 count--;
                 total++;
             }
             sb.setLength(sb.length() - 2);
-            sb.append(") and date_added > sysdate - 5");
+            sb.append(")");
             out.println(sb.toString());
             out.println("####################");
             System.out.println("total number=" + total);
@@ -122,7 +145,7 @@ public class CaptureLog {
         }
     }
     public void deduplicate2() throws Exception{
-        File file = new File("/Users/mming/Downloads/capture/8650");
+        File file = new File("/Users/mming/Downloads/tidlackR1");
         BufferedReader br = new BufferedReader(new FileReader(file));
         String str;
         Set<String> set = new HashSet<>();
@@ -130,7 +153,7 @@ public class CaptureLog {
             set.add(str);
         }
 
-        File file2 = new File("/Users/mming/Downloads/capture/authSuccess.txt");
+        File file2 = new File("/Users/mming/Downloads/tid_voided");
         BufferedReader br2 = new BufferedReader(new FileReader(file2));
         while ((str = br2.readLine()) != null) {
             if(!set.contains(str)){
@@ -142,5 +165,9 @@ public class CaptureLog {
         for (String num : set) {
             System.out.println(num);
         }
+    }
+    private String getTimeStamp() {
+        Date date = new Date();
+        return date.getTime() + "";
     }
 }
