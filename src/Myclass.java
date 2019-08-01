@@ -3592,13 +3592,11 @@ public class Myclass {
 
 
 
-        System.out.println("SELECT ap.account_id as account_id" +
+        System.out.println("SELECT p.sender_account_id as account_id" +
                 ", p.id as payment_id" +
                 ", p.type as type" +
-                ", p.create_time as date_time" +
                 ", af.totalFee as act72_fee" +
                 ", ai.settlementAmount as amount" +
-                ", ai.settlementCurrency as currency" +
                 ", ai.method_of_payment as payment_method" +
                 ", af.category as category" +
                 ", af.subCategory as subCategory" +
@@ -3606,31 +3604,26 @@ public class Myclass {
                 ", fs.fixed_fee_amount as flat_fee" +
                 ", fs.basis_point as basis_rate " +
                 ", ai.entityNumber as transaction_division_id " +
-                "FROM " + "account_properties" + " AS ap " +
-                "INNER JOIN " + "payments" + " AS p " +
+                "FROM " + "payments" + " AS p " +
                 // Since all payments from ACT72 are credit card payment,
                 // for charge payment recipient will be IC+ merchant and sender will be credit card,
                 // for refund sender will be IC+ merchant and recipient will be credit card.
-                "ON ap.account_id = p.recipient_account_id OR ap.account_id = p.sender_account_id " +
                 "INNER JOIN chase_dfr_transaction_information_detail" + " AS ai " +
                 "ON ai.merchant_order_id = p.id " +
                 "INNER JOIN chase_dfr_transaction_fee_detail" + " AS af " +
-                "ON ai.merchant_order_id = p.id AND ai.reportRowId = af.informationReportRowId " +
+                "ON ai.reportRowId = af.informationReportRowId " +
                 "INNER JOIN groups g " +
-                "ON g.account_id = ap.`account_id` " +
-                "INNER JOIN `shadow_group_mapping` sd " +
-                "ON sd.group_id = g.id " +
+                "ON g.account_id = p.`sender_account_id` " +
                 "INNER JOIN `merchant_fee_schedule_mapping` mfs " +
-                "ON (mfs.`merchant_id` = g.id OR mfs.merchant_id = sd.`mapping_object_id`) " +
+                "ON (mfs.`merchant_id` = g.id) " +
                 "AND mfs.`currency` = ai.`settlementCurrency` " +
                 "INNER JOIN `fee_schedule` fs " +
                 "ON mfs.cc_ic = fs.id " +
                 "INNER JOIN chase_dfr_header AS h " +
                 "ON ai.reportHeaderId = h.id " +
-                "WHERE ap.key = 'pricing_model' " +
-                "AND ap.value = 'merchant_ic_plus' " +
-                "AND af.category = 'IA' AND ( af.subCategory = 'IC' OR af.subCategory = 'AS') " +
-                "AND sd.mapping_object_type = 'merchant_account'" +
+                "WHERE af.category = 'IA' AND ( af.subCategory = 'IC' OR af.subCategory = 'AS') " +
+                "AND p.fee_schedule_id = 1f"  + " " +
+                "AND p.type = 1 " +
                 "AND p.create_time > UNIX_TIMESTAMP(LAST_DAY(CURDATE() - INTERVAL 2 MONTH)) " +
                 "AND p.create_time < UNIX_TIMESTAMP(LAST_DAY(CURDATE() - INTERVAL 1 MONTH)) " +
                 // Set time range based on report's date

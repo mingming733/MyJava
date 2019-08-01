@@ -19,8 +19,10 @@ INSERT INTO `chase_dfr_transaction_information_detail` (`id`, `reportRowId`, `me
 VALUES
     (1,1, 1, 'VS', 1230, 'USD', 'HFIN00111561629284', 345),
     (2, 2, 2, 'MC', 500, 'USD', 'HFIN00111561629284', 345),
-    (3, 2, 3, 'MC', 500, 'USD', 'HFIN00111561629284', 345);
-
+    (3, 3, 3, 'MC', 500, 'USD', 'HFIN00111561629284', 345),
+    (4,4, 5, 'VS', 1230, 'USD', 'HFIN00111561629284', 345),
+    (5, 5, 6, 'MC', 500, 'USD', 'HFIN00111561629284', 345),
+    (6, 6, 7, 'MC', 500, 'USD', 'HFIN00111561629284', 345);
 
 drop table if exists chase_dfr_transaction_fee_detail;
 create table chase_dfr_transaction_fee_detail (
@@ -50,7 +52,15 @@ VALUES
     (13, 5, 'IA', 'IC', '2.02', 3),
     (14, 6, 'IA', 'AS', '2.03', 3),
     (15, 7, 'IA', 'AS', '1.01', 3),
-    (16, 8, 'IA', 'AS', '6.02', 3);
+    (16, 8, 'IA', 'AS', '6.02', 3),
+    (17, 4, 'IA', 'IC', '1.01', 3),
+    (18, 4, 'PEEE', '', '2.02', 3),
+    (19, 5, 'IA', 'IC', '3.03', 3),
+    (20, 5, 'IA', 'AS', '33.01', 3),
+    (21, 5, 'IA', 'IC', '2.02', 3),
+    (22, 6, 'IA', 'AS', '2.03', 3),
+    (23, 4, 'IA', 'AS', '1.01', 3),
+    (24, 6, 'IA', 'AS', '6.02', 3);
 -- end of act72
 
 
@@ -70,14 +80,14 @@ VALUES
 
 INSERT INTO `payments` (`id`, `currency`, `descriptor`, `payment_request_id`, `processor_id`, `amount`, `net`, `fee`, `app_fee`, `effective_gross`, `fee_schedule_id`, `sender_account_id`, `recipient_account_id`, `fee_account_id`, `app_fee_account_id`, `escrow_account_id`, `payer_account_id`, `payee_account_id`, `next_payment_id`, `prev_payment_id`, `cost`, `type`, `status`, `state`, `review`, `direction`, `create_time`, `start_time`, `activity_time`, `processing_date`, `queue_action_time`, `finish_time`, `finance_time`, `stop_time`, `reverse_time`, `deposit_time`, `withdraw_time`, `modify_time`, `user_id`, `ip`, `version`, `payment_method`, `funds_settlement_id`)
 VALUES
-    (1, 'USD', '', 2, 3, 50000, 50000, 1480, 0, 51480, 21, 33, 32, 35, 32, 0, 34, 32, 0, 0, 0, 1, 256, 3, 0, 1, 1560291960, 1442336855, NULL, NULL, NULL, 1442336857, 1549990800000, NULL, NULL, 1442336857, NULL, 1550012688, 183590906, '', 10, 2, NULL),
-    (2, 'USD', '', 3, 19, 50000, 50000, 0, 0, 50000, 4, 32, 36, 35, 0, 0, 32, 36, 0, 0, 0, 4, 256, 6, 0, 2, 1560291960, 1443034145, NULL, NULL, NULL, NULL, 1549990800000, 1443034147, NULL, NULL, NULL, 1550012688, 192320109, '', 10, 0, NULL),
-    (3, 'USD', '', 4, 19, 50000, 50000, 0, 0, 50000, 4, 32, 36, 35, 0, 0, 32, 36, 0, 0, 0, 1, 256, 6, 0, 2, 1560291960, 1443078002, NULL, NULL, NULL, NULL, 1549990800000, 1443078002, NULL, NULL, NULL, 1550012688, 192320109, '', 10, 0, NULL),
-    (4, 'USD', '', 5, 19, 50000, 50000, 0, 0, 50000, 4, 32, 36, 35, 0, 0, 32, 36, 0, 0, 0, 1, 256, 6, 0, 2, 1560291960, 1443164402, NULL, NULL, NULL, NULL, 1549990800000, 1443164403, NULL, NULL, NULL, 1550012688, 192320109, '', 10, 0, NULL),
-    (5, 'USD', '', 6, 19, 50000, 50000, 0, 0, 50000, 4, 32, 36, 35, 0, 0, 32, 36, 0, 0, 0, 1, 256, 6, 0, 2, 1560291960, 1443250802, NULL, NULL, NULL, NULL, 1549990800000, 1443250862, NULL, NULL, NULL, 1550012688, 192320109, '', 10, 0, NULL),
-    (6, 'USD', '', 7, 19, 50000, 50000, 0, 0, 50000, 4, 32, 36, 35, 0, 0, 32, 36, 0, 0, 0, 1, 256, 6, 0, 2, 1560291960, 1443337201, NULL, NULL, NULL, NULL, 1549990800000, 1443337262, NULL, NULL, NULL, 1550012688, 192320109, '', 10, 0, NULL),
-    (7, 'USD', '', 8, 19, 50000, 50000, 0, 0, 50000, 4, 32, 36, 35, 0, 0, 32, 36, 0, 0, 0, 1, 256, 6, 0, 2, 1560291960, 1443423602, NULL, NULL, NULL, NULL, 0, 1443423603, NULL, NULL, NULL, 1443423603, 192320109, '', 8, 0, NULL),
-    (8, 'USD', '', 9, 19, 50000, 50000, 0, 0, 50000, 4, 32, 36, 35, 0, 0, 32, 36, 0, 0, 0, 1, 256, 6, 0, 2, 1560291960, 1443510002, NULL, NULL, NULL, NULL, 0, 1443510003, NULL, NULL, NULL, 1443510003, 192320109, '', 8, 0, NULL),
+    (1, 'USD', '', 2, 3, 50000, 50000, 1480, 0, 51480, 1, 33, 32, 35, 32, 0, 34, 32, 0, 0, 0, 1, 256, 3, 0, 1, 1560291960, 1442336855, NULL, NULL, NULL, 1442336857, 1549990800000, NULL, NULL, 1442336857, NULL, 1550012688, 183590906, '', 10, 2, NULL),
+    (2, 'USD', '', 3, 19, 50000, 50000, 0, 0, 50000, 1, 32, 36, 35, 0, 0, 32, 36, 0, 0, 0, 4, 256, 6, 0, 2, 1560291960, 1443034145, NULL, NULL, NULL, NULL, 1549990800000, 1443034147, NULL, NULL, NULL, 1550012688, 192320109, '', 10, 0, NULL),
+    (3, 'USD', '', 4, 19, 50000, 50000, 0, 0, 50000, 1, 32, 36, 35, 0, 0, 32, 36, 0, 0, 0, 1, 256, 6, 0, 2, 1560291960, 1443078002, NULL, NULL, NULL, NULL, 1549990800000, 1443078002, NULL, NULL, NULL, 1550012688, 192320109, '', 10, 0, NULL),
+    (4, 'USD', '', 5, 19, 50000, 50000, 0, 0, 50000, 1, 32, 36, 35, 0, 0, 32, 36, 0, 0, 0, 1, 256, 6, 0, 2, 1560291960, 1443164402, NULL, NULL, NULL, NULL, 1549990800000, 1443164403, NULL, NULL, NULL, 1550012688, 192320109, '', 10, 0, NULL),
+    (5, 'USD', '', 6, 19, 50000, 50000, 0, 0, 50000, 4, 32, 36, 35, 0, 0, 36, 36, 0, 0, 0, 1, 256, 6, 0, 2, 1560291960, 1443250802, NULL, NULL, NULL, NULL, 1549990800000, 1443250862, NULL, NULL, NULL, 1550012688, 192320109, '', 10, 0, NULL),
+    (6, 'USD', '', 7, 19, 50000, 50000, 0, 0, 50000, 4, 32, 36, 35, 0, 0, 36, 36, 0, 0, 0, 1, 256, 6, 0, 2, 1560291960, 1443337201, NULL, NULL, NULL, NULL, 1549990800000, 1443337262, NULL, NULL, NULL, 1550012688, 192320109, '', 10, 0, NULL),
+    (7, 'USD', '', 8, 19, 50000, 50000, 0, 0, 50000, 4, 32, 36, 35, 0, 0, 36, 36, 0, 0, 0, 1, 256, 6, 0, 2, 1560291960, 1443423602, NULL, NULL, NULL, NULL, 0, 1443423603, NULL, NULL, NULL, 1443423603, 192320109, '', 8, 0, NULL),
+    (8, 'USD', '', 9, 19, 50000, 50000, 0, 0, 50000, 4, 32, 36, 35, 0, 0, 36, 36, 0, 0, 0, 1, 256, 6, 0, 2, 1560291960, 1443510002, NULL, NULL, NULL, NULL, 0, 1443510003, NULL, NULL, NULL, 1443510003, 192320109, '', 8, 0, NULL),
     (9, 'USD', '', 10, 19, 50000, 50000, 0, 0, 50000, 4, 32, 36, 35, 0, 0, 32, 36, 0, 0, 0, 1, 256, 6, 0, 2, 1560291960, 1443596402, NULL, NULL, NULL, NULL, 0, 1443596403, NULL, NULL, NULL, 1443596403, 192320109, '', 8, 0, NULL),
     (10, 'USD', '', 11, 19, 50000, 50000, 0, 0, 50000, 4, 32, 36, 35, 0, 0, 32, 36, 0, 0, 0, 1, 256, 6, 0, 2, 1560291960, 1443682802, NULL, NULL, NULL, NULL, 0, 1443682802, NULL, NULL, NULL, 1443682802, 192320109, '', 8, 0, NULL),
     (11, 'USD', '', 12, 19, 50000, 50000, 0, 0, 50000, 4, 32, 36, 35, 0, 0, 32, 36, 0, 0, 0, 1, 256, 6, 0, 2, 1560291960, 1443769202, NULL, NULL, NULL, NULL, 0, 1443769203, NULL, NULL, NULL, 1443769203, 192320109, '', 8, 0, NULL),
@@ -207,7 +217,7 @@ create table merchant_fee_schedule_mapping (
 INSERT INTO `merchant_fee_schedule_mapping` (`id`, `ts_create_time`, `ts_modify_time`, `merchant_id`, `currency`, `type`, `cc_ic`, `cc_cp`, `cc_cp_amex`, `cc_cnp`, `cc_cnp_amex`, `intl_extra`, `ach_t1`, `ach_t2`, `ach_t3`, `ach_t4`, `ach_t1_threshold`, `ach_t2_threshold`, `ach_t3_threshold`, `ach_t4_threshold`)
 VALUES
     (1, '2019-07-15 21:16:58', '2019-07-15 21:18:02', 'd1fa5b4f-291c-4349-87d6-f2747ade7e32', 'USD', 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
-    (2, '2019-07-15 21:16:58', '2019-07-15 21:18:02', '2', 'USD', 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    (2, '2019-07-15 21:16:58', '2019-07-15 21:18:02', '1', 'USD', 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
 
 CREATE TABLE `shadow_group_mapping` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -225,8 +235,8 @@ CREATE TABLE `shadow_group_mapping` (
 ) ENGINE=InnoDB AUTO_INCREMENT=114716 DEFAULT CHARSET=latin1;
 INSERT INTO `shadow_group_mapping` (`id`, `mapping_object_type`, `mapping_object_id`, `group_id`, `create_time`, `modify_time`, `version`)
 VALUES
-    (11470, 'merchant_account', 'd1fa5b4f-291c-4349-87d6-f2747ade7e32', 1, 1518435809, 1518435810, 1),
-    (11471, 'merchant_account', 'f3a48acc-3529-4e6d-9a6d-1c47ff0d5d75', 2, 1518435810, 1518435811, 1);
+    (11470, 'merchant_account', 'd1fa5b4f-291c-4349-87d6-f2747ade7e32', 2, 1518435809, 1518435810, 1),
+    (11471, 'merchant_account', 'f3a48acc-3529-4e6d-9a6d-1c47ff0d5d75', 1, 1518435810, 1518435811, 1);
 
 INSERT INTO `groups` (`id`, `name`, `description`, `founder_id`, `photo_id`, `account_id`, `primary_bank_account_id`, `parent_id`, `preferences`, `status`, `create_time`, `vanity_url`, `vanity_url_normalized`, `data`, `app_id`, `theme_id`, `gaq_domains`, `settings`, `financial_admin_id`, `reference_id`, `kyc_id`, `modify_time`, `version`, `expire_time`, `disablement_time`, `country`)
 VALUES
