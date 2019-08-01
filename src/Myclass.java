@@ -1,4 +1,9 @@
 
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.*;
 
 
@@ -3497,16 +3502,224 @@ public class Myclass {
 //        return i == len;
 //    }
 
+    class Solution {
+        public int totalFruit(int[] tree) {
+            Map<Integer, Integer> counter = new HashMap<>();
+            int max = 0;
+            int i = 0;
+            for(int j = 0; j < tree.length; j++) {
+                if (!counter.containsKey(tree[j])) {
+                    counter.put(tree[j], 0);
+                }
+                counter.put(tree[j], counter.get(tree[j]) + 1);
+                while(counter.size() > 2) {
+                    counter.put(tree[i], counter.get(tree[i]) - 1);
+                    if (counter.get(tree[i]) == 0) {
+                        counter.remove(tree[i]);
+                    }
+                    i++;
+                }
+                max = max > j - i + 1? max : j - i + 1;
+            }
+            return max;
+        }
+    }
     public static void main(String[] args) {
-        // type sout and press Tab to generate System.out.println automatically.
         Myclass mc = new Myclass();
+        String temp =  "SELECT " +
+                "  entityNumber as app_id, " +
+                "  SUM(amount) AS total_tpv, " +
+                "  SUM(totalCharge) AS assessment_fee, " +
+                "  LAST_DAY(CURRENT_DATE() - INTERVAL 2 MONTH) + INTERVAL 1 DAY AS from_date, " +
+                "  LAST_DAY(CURRENT_DATE() - INTERVAL 1 MONTH) AS to_date " +
+                "FROM " +
+                "  `chase_dfr_service_charge` s, " +
+                "  `chase_dfr_header` h " +
+                "WHERE " +
+                "  s.reportHeaderId = h.id " +
+                "  AND category = 'IA' " +
+                "  AND subCategory = 'AS' " +
+                "  AND EXTRACT(month FROM reportDateFrom) = EXTRACT(month FROM current_date()) - 1 " +
+                "GROUP BY " +
+                "  entityNumber;";
 
-        GoogleRedBlueTree gt = new GoogleRedBlueTree();
-        gt.test();
+        String s = "-2.2";
+        double d = Double.parseDouble(s);
+        long l =(long) (d * 10l);
+
+        String opt =  "SELECT ap.account_id as account_id" +
+                ", p.id as payment_id" +
+                ", p.type as type" +
+                ", af.totalFee as act72_fee" +
+                ", ai.settlementAmount as amount" +
+                ", ai.method_of_payment as payment_method" +
+                ", af.category as category" +
+                ", af.subCategory as subCategory" +
+                ", fs.id as mark_up_fee_id" +
+                ", fs.fixed_fee_amount as flat_fee" +
+                ", fs.basis_point as basis_rate " +
+                ", ai.entityNumber as transaction_division_id " +
+                "FROM " + "account_properties" + " AS ap " +
+                "INNER JOIN " + "payments" + " AS p " +
+                // Since all payments from ACT72 are credit card payment,
+                // for charge payment recipient will be IC+ merchant and sender will be credit card,
+                // for refund sender will be IC+ merchant and recipient will be credit card.
+                "ON ap.account_id = p.recipient_account_id OR ap.account_id = p.sender_account_id " +
+                "INNER JOIN chase_dfr_transaction_information_detail" + " AS ai " +
+                "ON ai.merchant_order_id = p.id " +
+                "INNER JOIN chase_dfr_transaction_fee_detail" + " AS af " +
+                "ON ai.merchant_order_id = p.id AND ai.reportRowId = af.informationReportRowId " +
+                "INNER JOIN groups g " +
+                "ON g.account_id = ap.`account_id` " +
+                "INNER JOIN `shadow_group_mapping` sd " +
+                "ON sd.group_id = g.id " +
+                "INNER JOIN `merchant_fee_schedule_mapping` mfs " +
+                "ON (mfs.`merchant_id` = g.id OR mfs.merchant_id = sd.`mapping_object_id`) AND mfs.`currency` = ai.`settlementCurrency` " +
+                "INNER JOIN `fee_schedule` fs " +
+                "ON mfs.cc_ic = fs.id " +
+                "INNER JOIN chase_dfr_header AS h " +
+                "ON ai.reportHeaderId = h.id" +
+                "WHERE ap.key = 'pricing_model' " +
+                "AND ap.value = 'merchant_ic_plus' " +
+                "AND af.category = 'IA' AND ( af.subCategory = 'IC' OR af.subCategory = 'AS') " +
+                "AND sd.mapping_object_type = 'merchant_account'" +
+                "AND p.create_time > UNIX_TIMESTAMP(LAST_DAY(CURDATE() - INTERVAL 2 MONTH)) " +
+                "AND p.create_time < UNIX_TIMESTAMP(LAST_DAY(CURDATE() - INTERVAL 1 MONTH)) " +
+                // Set time range based on report's date
+                "AND h.reportDateFrom > LAST_DAY(CURDATE() - INTERVAL 2 MONTH) " +
+                "AND h.reportDateFrom < LAST_DAY(CURDATE() - INTERVAL 1 MONTH + INTERVAL 1 DAY)";
 
 
 
 
+        System.out.println("SELECT ap.account_id as account_id" +
+                ", p.id as payment_id" +
+                ", p.type as type" +
+                ", p.create_time as date_time" +
+                ", af.totalFee as act72_fee" +
+                ", ai.settlementAmount as amount" +
+                ", ai.settlementCurrency as currency" +
+                ", ai.method_of_payment as payment_method" +
+                ", af.category as category" +
+                ", af.subCategory as subCategory" +
+                ", fs.id as mark_up_fee_id" +
+                ", fs.fixed_fee_amount as flat_fee" +
+                ", fs.basis_point as basis_rate " +
+                ", ai.entityNumber as transaction_division_id " +
+                "FROM " + "account_properties" + " AS ap " +
+                "INNER JOIN " + "payments" + " AS p " +
+                // Since all payments from ACT72 are credit card payment,
+                // for charge payment recipient will be IC+ merchant and sender will be credit card,
+                // for refund sender will be IC+ merchant and recipient will be credit card.
+                "ON ap.account_id = p.recipient_account_id OR ap.account_id = p.sender_account_id " +
+                "INNER JOIN chase_dfr_transaction_information_detail" + " AS ai " +
+                "ON ai.merchant_order_id = p.id " +
+                "INNER JOIN chase_dfr_transaction_fee_detail" + " AS af " +
+                "ON ai.merchant_order_id = p.id AND ai.reportRowId = af.informationReportRowId " +
+                "INNER JOIN groups g " +
+                "ON g.account_id = ap.`account_id` " +
+                "INNER JOIN `shadow_group_mapping` sd " +
+                "ON sd.group_id = g.id " +
+                "INNER JOIN `merchant_fee_schedule_mapping` mfs " +
+                "ON (mfs.`merchant_id` = g.id OR mfs.merchant_id = sd.`mapping_object_id`) " +
+                "AND mfs.`currency` = ai.`settlementCurrency` " +
+                "INNER JOIN `fee_schedule` fs " +
+                "ON mfs.cc_ic = fs.id " +
+                "INNER JOIN chase_dfr_header AS h " +
+                "ON ai.reportHeaderId = h.id " +
+                "WHERE ap.key = 'pricing_model' " +
+                "AND ap.value = 'merchant_ic_plus' " +
+                "AND af.category = 'IA' AND ( af.subCategory = 'IC' OR af.subCategory = 'AS') " +
+                "AND sd.mapping_object_type = 'merchant_account'" +
+                "AND p.create_time > UNIX_TIMESTAMP(LAST_DAY(CURDATE() - INTERVAL 2 MONTH)) " +
+                "AND p.create_time < UNIX_TIMESTAMP(LAST_DAY(CURDATE() - INTERVAL 1 MONTH)) " +
+                // Set time range based on report's date
+                "AND h.reportDateFrom > LAST_DAY(CURDATE() - INTERVAL 2 MONTH) " +
+                "AND h.reportDateFrom < LAST_DAY(CURDATE() - INTERVAL 1 MONTH + INTERVAL 1 DAY)");
+
+    }
+    private String buildMarkupQuery()   {
+        return "SELECT ap.account_id as account_id" +
+                ", p.id as payment_id" +
+                ", p.type as type" +
+                ", af.totalFee as act72_fee" +
+                ", ai.settlementAmount as amount" +
+                ", ai.method_of_payment as payment_method" +
+                ", af.category as category" +
+                ", af.subCategory as subCategory" +
+                ", fs.id as mark_up_fee_id" +
+                ", fs.fixed_fee_amount as flat_fee" +
+                ", fs.basis_point as basis_rate " +
+                ", ai.entityNumber as transaction_division_id " +
+                "FROM " + "account_properties" + " AS ap " +
+                "INNER JOIN " + "payments" + " AS p " +
+                // Since all payments from ACT72 are credit card payment,
+                // for charge payment recipient will be IC+ merchant and sender will be credit card,
+                // for refund sender will be IC+ merchant and recipient will be credit card.
+                "ON ap.account_id = p.recipient_account_id OR ap.account_id = p.sender_account_id " +
+                "INNER JOIN chase_dfr_transaction_information_detail" + " AS ai " +
+                "ON ai.merchant_order_id = p.id " +
+                "INNER JOIN chase_dfr_transaction_fee_detail" + " AS af " +
+                "ON ai.merchant_order_id = p.id AND ai.reportRowId = af.informationReportRowId " +
+                "INNER JOIN groups g " +
+                "ON g.account_id = ap.`account_id` " +
+                "INNER JOIN `shadow_group_mapping` sd " +
+                "ON sd.group_id = g.id " +
+                "INNER JOIN `merchant_fee_schedule_mapping` mfs " +
+                "ON (mfs.`merchant_id` = g.id OR mfs.merchant_id = sd.`mapping_object_id`) " +
+                "AND mfs.`currency` = ai.`settlementCurrency` " +
+                "INNER JOIN `fee_schedule` fs " +
+                "ON mfs.cc_ic = fs.id " +
+                "INNER JOIN chase_dfr_header AS h " +
+                "ON ai.reportHeaderId = h.id " +
+                "WHERE ap.key = 'pricing_model' " +
+                "AND ap.value = 'merchant_ic_plus' " +
+                "AND af.category = 'IA' AND ( af.subCategory = 'IC' OR af.subCategory = 'AS') " +
+                "AND sd.mapping_object_type = 'merchant_account'" +
+                "AND p.create_time > UNIX_TIMESTAMP(LAST_DAY(CURDATE() - INTERVAL 2 MONTH)) " +
+                "AND p.create_time < UNIX_TIMESTAMP(LAST_DAY(CURDATE() - INTERVAL 1 MONTH)) " +
+                // Set time range based on report's date
+                "AND h.reportDateFrom > LAST_DAY(CURDATE() - INTERVAL 2 MONTH) " +
+                "AND h.reportDateFrom < LAST_DAY(CURDATE() - INTERVAL 1 MONTH + INTERVAL 1 DAY)";
+    }
+
+    private String buildFIN11Query()  {
+        // get total assessment_fee in app level from FIN11
+        return "SELECT " +
+                "  entityNumber as transaction_division_id, " +
+                "  SUM(amount) AS total_tpv, " +
+                "  SUM(totalCharge) AS assessment_fee, " +
+                "  LAST_DAY(CURRENT_DATE() - INTERVAL 2 MONTH) + INTERVAL 1 DAY AS from_date, " +
+                "  LAST_DAY(CURRENT_DATE() - INTERVAL 1 MONTH) AS to_date " +
+                "FROM `chase_dfr_service_charge` s, `chase_dfr_header` h " +
+                "WHERE " +
+                "  s.reportHeaderId = h.id " +
+                "  AND category = 'IA' " +
+                "  AND subCategory = 'AS' " +
+                "  AND EXTRACT(month FROM reportDateFrom) = EXTRACT(month FROM current_date()) - 1 " +
+                "GROUP BY " +
+                "  entityNumber;";
+    }
+
+    private String buildACT72Query() {
+        // get total assessment_fee in app level from ACT72
+        return "SELECT " +
+                "  entityNumber as transaction_division_id, " +
+                "  SUM(settlementAmount) AS monthly_tpv, " +
+                "  SUM(totalFee) AS assessment_fee, " +
+                "  EXTRACT(month FROM current_date()) - 1 AS from_date, " +
+                "  EXTRACT(month FROM current_date()) - 1 AS to_date " +
+                "FROM `chase_dfr_transaction_fee_detail` AS d, " +
+                "  `chase_dfr_transaction_information_detail` AS i, " +
+                "  `chase_dfr_header` h " +
+                "WHERE " +
+                "  i.reportHeaderId = h.id " +
+                "  AND d.informationReportRowId = i.reportRowId " +
+                "  AND d.category = 'IA' " +
+                "  AND d.subCategory = 'AS' " +
+                "  AND EXTRACT(month FROM h.reportDateFrom) = EXTRACT(month FROM current_date()) - 1 " +
+                "GROUP BY " +
+                "  i.entityNumber;";
     }
     static class Coordination{
         int x;

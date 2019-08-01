@@ -1,0 +1,3 @@
+ INSERT INTO `group_private_data` (`group_id`, `mcc`, `tax_id`, `personal_tax_id`, `legal_name`, `dba_name`, `address_id`, `create_time`, `modify_time`, `encryption_key_id`, `version`, `vendor_provided_personal_tax_id`, `personal_tax_id_last_4_digits`, `kyc_birthday_year`, `kyc_birthday_month`, `kyc_birthday_day`)
+VALUES
+    (2837, '', 'wL+Zw+/s1R3/KEeJBeKSTt3nBEOMfRJUo6/k', 'qyZm/IXIb9UKK5LMCGfdnAU7JoGRoZPazw==', 'iyO2XJYOR9Zttur9Ws7gBnfCnA2RadCudt21YI2Vz8S8QkBJ', NULL, NULL, 1520351639, 1520351640, 1, 7, NULL, NULL, 'yajzoiu8zbb7sb+c2saS8PX6BUI=', 'YV7/QT8AiqkD5YpPnjDjqxI=', 'zIe17hPNX4nzO6xcrjYtEVsC');
