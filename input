@@ -1,18 +1,34 @@
-table we need for fee_lib
-monolith:
-    payments
-    groups
-    shadow_group_mapping
-    refunds
-    payments_requests
-
-Dorado:
-    fee_schedule
-    merchant_fee_schedule_mapping
-
-Stringray:
-    chase_dfr_transaction_information_detail
-    chase_dfr_transaction_fee_detail
-    chase_dfr_header
-    chase_dfr_service_charge
-
+SELECT
+  refund_p.p_id AS id,
+  refund_p.currency as currency,
+  refund_p.type AS type,
+  refund_p.payment_method as payment_method,
+  original_p.fee_schedule_id,
+  refund_p.create_time AS create_time,
+  original_p. amount AS amount,
+  refund_p.amount as refund_amount
+FROM
+  [micro-bus-121218:monolith_wepay__views_clean.payments] AS original_p
+INNER JOIN
+  [micro-bus-121218:monolith_wepay__views_clean.refunds] AS r
+ON
+  r.rpr_id = original_p.payment_request_id
+INNER JOIN (
+  SELECT
+    p.payment_request_id AS pr_id,
+    p.id AS p_id,
+    p.fee_schedule_id,
+    p.payment_method as payment_method,
+    p.currency as currency,
+    recipient_account_id,
+    type,
+    p.create_time, 
+    p.amount
+  FROM
+    [micro-bus-121218:monolith_wepay__views_clean.payments] AS p
+  WHERE
+    p.type = 4
+    AND p.create_time >= 1561939200
+    AND p.create_time < 1564617600) AS refund_p
+ON
+  r.payment_request_id = refund_p.pr_id

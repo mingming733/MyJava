@@ -10,5 +10,10 @@
     <orderEntry type="library" name="JSON-java-master" level="project" />
     <orderEntry type="library" name="json-simple-1.1.jar" level="project" />
     <orderEntry type="library" name="json-simple-1.1" level="project" />
+    <orderEntry type="library" name="TCPConnectServerSim" level="project" />
+    <orderEntry type="library" name="jpmc-msdk1_4" level="project" />
+    <orderEntry type="library" name="jpmc-msdk" level="project" />
+    <orderEntry type="library" name="MSDKCodeAssist" level="project" />
+    <orderEntry type="library" name="MSDKCodeAssist1_4" level="project" />
   </component>
 </module>

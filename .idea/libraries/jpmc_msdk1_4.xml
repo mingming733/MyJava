@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="jpmc-msdk1_4">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/jpmc-msdk1_4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

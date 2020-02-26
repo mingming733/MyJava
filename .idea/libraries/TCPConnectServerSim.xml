@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="TCPConnectServerSim">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/TCPConnectServerSim.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,805 @@
+{
+  "type": "record",
+  "name": "AmexGsmfResponseFileDetailEvent",
+  "namespace": "com.wepay.events.core",
+  "doc": "amex gsmf response file detail records",
+  "fields": [
+    {
+      "name": "producerHeader",
+      "doc": "A generic producer header for kafka message details",
+      "type": "com.wepay.events.headers.ProducerHeader"
+    },
+    {
+      "name": "recordType",
+      "doc": "This field contains a value that corresponds to the record type and must be the first item in the record. The constant TLR in this field indicates that this is a Trailer Record.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "recordNumber",
+      "doc": "This field contains a record sequence number that is used to monitor the integrity and continuity of data in a file.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "createdTime",
+      "doc": "created time",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "seNumber",
+      "doc": "This field contains the American Express-assigned Service Establishment SE Number used to submit Sponsored Merchant transactions.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "filename",
+      "doc": "GSMF file name ",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "fileUuid",
+      "doc": "GMSF file uuid",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "sellerId",
+      "doc": "This field contains the Seller ID, a merchant-assigned seller code that uniquely identifies a Participant’s specific Seller.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "sellerLegalName",
+      "doc": "This field contains the Seller’s Legal Name.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "sellerDbaName",
+      "doc": "This field contains the Seller’s business name that appears on the storefront and/or customer receipts, commonly referred to as the D.B.A. (Doing Business As) name.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "sellerMerchantCategoryCode",
+      "doc": "This field contains the Merchant Category Code (MCC) that corresponds to the Seller’s business type.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "sellerStreetAddress1",
+      "doc": "This field contains the street address where the Seller’s business is legally registered or physically located (physical address only, P.O. Boxes are not allowed).",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "sellerCityName",
+      "doc": "This field contains the name of the city where the Seller’s business is legally registered or physically located (physical address only, P.O. Boxes are not allowed).",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "sellerRegionCode",
+      "doc": "This field contains the region code that corresponds to the state, province or other country subdivision where the Seller’s business is legally registered or physically located (physical address only, P.O. Boxes are not allowed).",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "sellerPostalCode",
+      "doc": "This field contains the postal code for where the Seller's business is legally registered or physically located (physical address only, P.O. Boxes are not allowed).",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "sellerCountryCode",
+      "doc": "This field contains the two-character, alpha country code for where the Seller's business is legally registered or physically located (physical address only, P.O. Boxes are not allowed). For example, the ISO alpha code for USA is US.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "sellerBusinessPhoneNumber",
+      "doc": "This field contains the phone number for the Seller’s physical location. Entry must be significant characters only, with no dashes, spaces or other separators. Only numeric values are valid.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "sellerEmailAddress",
+      "doc": "This field contains the Seller’s primary business email address. A default, generic email address cannot be provided by the Participant.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "sellerUrl",
+      "doc": "Only required for MCC 5969. This field contains the Seller’s primary business Web address. This field must be populated for internet Sellers. In all other cases this field should be left blank.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "sellerCurrencyCode",
+      "doc": "This field contains the Seller's Currency Code, which is a three- character, alpha code that corresponds to the currency applicable to transaction amounts submitted on the Seller's behalf.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "authorizedSignerFirstName",
+      "doc": "This field contains the Seller’s Authorized Signer First Name.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "authorizedSignerLastName",
+      "doc": "This field contains the Seller’s Authorized Signer Last Name.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "language",
+      "doc": "This field contains the marketing language preference for the Seller.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "jcbIndicator",
+      "doc": "This field contains a single character indicator which designates if the Seller is a JCB acceptor.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "significantOwner1FirstName",
+      "doc": "This field contains the Seller’s Significant Owner First Name.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "significantOwner1LastName",
+      "doc": "This field contains the Seller’s Significant Owner Last Name.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "significantOwner1StreetAddress1",
+      "doc": "This field contains the street address where Seller’s Significant Owner resides (physical address only, P.O. Boxes are not allowed)",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "significantOwner1CityName",
+      "doc": "This field contains the name of the city where the Seller’s Significant Owner resides (physical address only, P.O. Boxes are not allowed)",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "significantOwner1RegionCode",
+      "doc": "This field contains the region code that corresponds to the state, province or other country subdivision where the Seller’s Significant Owner resides (physical address only, P.O. Boxes are not allowed).",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "significantOwner1PostalCode",
+      "doc": "This field contains the postal code for where the Seller's Significant Owner resides (physical address only, P.O. Boxes are not allowed)",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "significantOwner1CountryCode",
+      "doc": "This field contains the two-character, alpha country code for where the Seller's Significant Owner resides (physical address only, P.O. Boxes are not allowed).",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "marketingIndicator",
+      "doc": "This field contains a single character indicator which designates the American Express marketing parameters for the Seller.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "ownershipTypeIndicator",
+      "doc": "This field contains a single character indicator which identifies the business ownership type of the Seller.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "sellerTransactingIndicator",
+      "doc": "This field contains a single character indicator which identifies if the Seller has processed one or more transactions in the past 3 months.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "seDetailStatusCode",
+      "doc": "This field is used to notify American Express that a Seller is canceled with the Participant.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "seDetailStatusCodeChangeDate",
+      "doc": "This field is required when a value has been entered in Field 33 (SE Detail Status Code). If there is no change in the Seller’s status, leave this field blank (space filled).",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "sellerStreetAddress2",
+      "doc": "This field contains the street address where the Seller’s business is legally registered or located (physical address only, P.O. Boxes are not allowed).",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "sellerStreetAddress3",
+      "doc": "This field contains the street address/Suburb details where the Seller’s business is legally registered or located (physical address only, P.O. Boxes are not allowed).",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "sellerStreetAddress4",
+      "doc": "This field contains the street address/Municipality/Delegation details where the Seller’s business is legally registered or located (physical address only, P.O. Boxes are not allowed).",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "sellerStreetAddress5",
+      "doc": "This field contains the street address where the Seller’s business is legally registered or located (physical address only, P.O. Boxes are not allowed).",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "authorizedSignerTitle",
+      "doc": "This field contains the title or office of the Seller’s Authorized Signer.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "significantOwner1StreetAddress2",
+      "doc": "This field contains the street address where Seller’s Significant Owner resides (physical address only, P.O. Boxes are not allowed).",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "significantOwner1StreetAddress3",
+      "doc": "This field contains the street address/Suburb details where Seller’s Significant Owner resides (physical address only, P.O. Boxes are not allowed).",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "significantOwner1StreetAddress4",
+      "doc": "This field contains the street address/Municipality/Delegation details where Seller’s Significant Owner resides (physical address only, P.O. Boxes are not allowed).",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "significantOwner1StreetAddress5",
+      "doc": "This field contains the street address where Seller’s Significant Owner resides (physical address only, P.O. Boxes are not allowed).",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "clientDefined",
+      "doc": "This field is intended for Participant use. If unused, it is character space filled.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "recordTypeErrorFlag",
+      "doc": "Participant will enter a space in this field on the incoming Sponsored Merchant file. In response to your file, American Express will pass back the original file and populate this specific field with a value of either a Y or N. If Y is populated, then the data record passed and will be updated. If N is populated, then the data record failed and will not be updated.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "recordNumberErrorFlag",
+      "doc": "Participant will enter a space in this field on the incoming Sponsored Merchant file. In response to your file, American Express will pass back the original file and populate this specific field with a value of either a Y or N.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "sellerIdErrorFlag",
+      "doc": "Participant will enter a space in this field on the incoming Sponsored Merchant file. In response to your file, American Express will pass back the original file and populate this specific field with a value of either a Y or N.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "sellerLegalNameErrorFlag",
+      "doc": "Participant will enter a space in this field on the incoming Sponsored Merchant file. In response to your file, American Express will pass back the original file and populate this specific field with a value of either a Y or N.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "sellerDbaNameErrorFlag",
+      "doc": "Participant will enter a space in this field on the incoming Sponsored Merchant file. In response to your file, American Express will pass back the original file and populate this specific field with a value of either a Y or N.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "sellerBusinessRegistrationNumberErrorFlag",
+      "doc": "Participant will enter a space in this field on the incoming Sponsored Merchant file. In response to your file, American Express will pass back the original file and populate this specific field with a value of either a Y or N.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "sellerMerchantCategoryCodeErrorFlag",
+      "doc": "Participant will enter a space in this field on the incoming Sponsored Merchant file. In response to your file, American Express will pass back the original file and populate this specific field with a value of either a Y or N.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "sellerStreetAddressErrorFlag",
+      "doc": "Participant will enter a space in this field on the incoming Sponsored Merchant file. In response to your file, American Express will pass back the original file and populate this specific field with a value of either a Y or N.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "sellerCityNameErrorFlag",
+      "doc": "Participant will enter a space in this field on the incoming Sponsored Merchant file. In response to your file, American Express will pass back the original file and populate this specific field with a value of either a Y or N.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "sellerRegionCodeErrorFlag",
+      "doc": "Participant will enter a space in this field on the incoming Sponsored Merchant file. In response to your file, American Express will pass back the original file and populate this specific field with a value of either a Y or N.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "sellerPostalCodeErrorFlag",
+      "doc": "Participant will enter a space in this field on the incoming Sponsored Merchant file. In response to your file, American Express will pass back the original file and populate this specific field with a value of either a Y or N.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "sellerCountryCodeErrorFlag",
+      "doc": "Participant will enter a space in this field on the incoming Sponsored Merchant file. In response to your file, American Express will pass back the original file and populate this specific field with a value of either a Y or N.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "sellerBusinessPhoneNumberErrorFlag",
+      "doc": "Participant will enter a space in this field on the incoming Sponsored Merchant file. In response to your file, American Express will pass back the original file and populate this specific field with a value of either a Y or N.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "sellerEmailAddressErrorFlag",
+      "doc": "Participant will enter a space in this field on the incoming Sponsored Merchant file. In response to your file, American Express will pass back the original file and populate this specific field with a value of either a Y or N.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "sellerUrlErrorFlag",
+      "doc": "Participant will enter a space in this field on the incoming Sponsored Merchant file. In response to your file, American Express will pass back the original file and populate this specific field with a value of either a Y or N.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "sellerCurrencyCodeErrorFlag",
+      "doc": "Participant will enter a space in this field on the incoming Sponsored Merchant file. In response to your file, American Express will pass back the original file and populate this specific field with a value of either a Y or N.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "authorizedSignerFirstNameErrorFlag",
+      "doc": "Participant will enter a space in this field on the incoming Sponsored Merchant file. In response to your file, American Express will pass back the original file and populate this specific field with a value of either a Y or N.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "authorizedSignerLastNameErrorFlag",
+      "doc": "Participant will enter a space in this field on the incoming Sponsored Merchant file. In response to your file, American Express will pass back the original file and populate this specific field with a value of either a Y or N.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "languageErrorFlag",
+      "doc": "Participant will enter a space in this field on the incoming Sponsored Merchant file. In response to your file, American Express will pass back the original file and populate this specific field with a value of either a Y or N.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "jcbErrorFlag",
+      "doc": "Participant will enter a space in this field on the incoming Sponsored Merchant file. In response to your file, American Express will pass back the original file and populate this specific field with a value of either a Y or N.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "significantOwner1FirstNameErrorFlag",
+      "doc": "Participant will enter a space in this field on the incoming Sponsored Merchant file. In response to your file, American Express will pass back the original file and populate this specific field with a value of either a Y or N.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "significantOwner1LastNameErrorFlag",
+      "doc": "Participant will enter a space in this field on the incoming Sponsored Merchant file. In response to your file, American Express will pass back the original file and populate this specific field with a value of either a Y or N.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "significantOwner1IdentificationNumberErrorFlag",
+      "doc": "Participant will enter a space in this field on the incoming Sponsored Merchant file. In response to your file, American Express will pass back the original file and populate this specific field with a value of either a Y or N.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "significantOwner1DateOfBirthErrorFlag",
+      "doc": "Participant will enter a space in this field on the incoming Sponsored Merchant file. In response to your file, American Express will pass back the original file and populate this specific field with a value of either a Y or N.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "significantOwner1StreetAddressErrorFlag",
+      "doc": "Participant will enter a space in this field on the incoming Sponsored Merchant file. In response to your file, American Express will pass back the original file and populate this specific field with a value of either a Y or N.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "significantOwner1CityNameErrorFlag",
+      "doc": "Participant will enter a space in this field on the incoming Sponsored Merchant file. In response to your file, American Express will pass back the original file and populate this specific field with a value of either a Y or N.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "significantOwner1RegionCodeErrorFlag",
+      "doc": "Participant will enter a space in this field on the incoming Sponsored Merchant file. In response to your file, American Express will pass back the original file and populate this specific field with a value of either a Y or N.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "significantOwner1PostalCodeErrorFlag",
+      "doc": "Participant will enter a space in this field on the incoming Sponsored Merchant file. In response to your file, American Express will pass back the original file and populate this specific field with a value of either a Y or N.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "significantOwner1CountryCodeErrorFlag",
+      "doc": "Participant will enter a space in this field on the incoming Sponsored Merchant file. In response to your file, American Express will pass back the original file and populate this specific field with a value of either a Y or N.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "marketingIndicatorErrorFlag",
+      "doc": "Participant will enter a space in this field on the incoming Sponsored Merchant file. In response to your file, American Express will pass back the original file and populate this specific field with a value of either a Y or N.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "ownershipTypeIndicatorErrorFlag",
+      "doc": "Participant will enter a space in this field on the incoming Sponsored Merchant file. In response to your file, American Express will pass back the original file and populate this specific field with a value of either a Y or N.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "sellerTransactingIndicatorErrorFlag",
+      "doc": "Participant will enter a space in this field on the incoming Sponsored Merchant file. In response to your file, American Express will pass back the original file and populate this specific field with a value of either a Y or N.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "seDetailStatusCodeErrorFlag",
+      "doc": "Participant will enter a space in this field on the incoming Sponsored Merchant file. In response to your file, American Express will pass back the original file and populate this specific field with a value of either a Y or N.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "seDetailStatusCodeChangeDateErrorFlag",
+      "doc": "Participant will enter a space in this field on the incoming Sponsored Merchant file. In response to your file, American Express will pass back the original file and populate this specific field with a value of either a Y or N.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "sellerStreetAddress2ErrorFlag",
+      "doc": "Participant will enter a space in this field on the incoming Sponsored Merchant file. In response to your file, American Express will pass back the original file and populate this specific field with a value of either a Y or N.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "sellerStreetAddress3ErrorFlag",
+      "doc": "Participant will enter a space in this field on the incoming Sponsored Merchant file. In response to your file, American Express will pass back the original file and populate this specific field with a value of either a Y or N.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "sellerStreetAddress4ErrorFlag",
+      "doc": "Participant will enter a space in this field on the incoming Sponsored Merchant file. In response to your file, American Express will pass back the original file and populate this specific field with a value of either a Y or N.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "sellerStreetAddress5ErrorFlag",
+      "doc": "Participant will enter a space in this field on the incoming Sponsored Merchant file. In response to your file, American Express will pass back the original file and populate this specific field with a value of either a Y or N.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "authorizedSignerTitleErrorFlag",
+      "doc": "Participant will enter a space in this field on the incoming Sponsored Merchant file. In response to your file, American Express will pass back the original file and populate this specific field with a value of either a Y or N.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "significantOwner1StreetAddress2ErrorFlag",
+      "doc": "Participant will enter a space in this field on the incoming Sponsored Merchant file. In response to your file, American Express will pass back the original file and populate this specific field with a value of either a Y or N.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "significantOwner1StreetAddress3ErrorFlag",
+      "doc": "Participant will enter a space in this field on the incoming Sponsored Merchant file. In response to your file, American Express will pass back the original file and populate this specific field with a value of either a Y or N.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "significantOwner1StreetAddress4ErrorFlag",
+      "doc": "Participant will enter a space in this field on the incoming Sponsored Merchant file. In response to your file, American Express will pass back the original file and populate this specific field with a value of either a Y or N.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "significantOwner1StreetAddress5ErrorFlag",
+      "doc": "Participant will enter a space in this field on the incoming Sponsored Merchant file. In response to your file, American Express will pass back the original file and populate this specific field with a value of either a Y or N.",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    }
+  ]
+}

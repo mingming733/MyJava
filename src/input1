@@ -1,0 +1,792 @@
+      {
+        "name": record_type",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": record_number",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": created_time",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": se_number",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": filename",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": file_uuid",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": seller_id",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": seller_legal_name",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": seller_dba_name",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": seller_merchant_category_code",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": seller_street_address_1",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": seller_city_name",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": seller_region_code",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": seller_postal_code",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": seller_country_code",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": seller_business_phone_number",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": seller_email_address",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": seller_url",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": seller_currency_code",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": authorized_signer_first_name",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": authorized_signer_last_name",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": language",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": jcb_indicator",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": significant_owner_1_first_name",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": significant_owner_1_last_name",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": significant_owner_1_street_address_1",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": significant_owner_1_city_name",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": significant_owner_1_region_code",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": significant_owner_1_postal_code",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": significant_owner_1_country_code",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": marketing_indicator",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": ownership_type_indicator",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": seller_transacting_indicator",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": se_detail_status_code",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": se_detail_status_code_change_date",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": seller_street_address_2",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": seller_street_address_3",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": seller_street_address_4",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": seller_street_address_5",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": authorized_signer_title",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": significant_owner_1_street_address_2",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": significant_owner_1_street_address_3",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": significant_owner_1_street_address_4",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": significant_owner_1_street_address_5",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": client_defined",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": record_type_error_flag",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": record_number_error_flag",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": seller_id_error_flag",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": seller_legal_name_error_flag",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": seller_dba_name_error_flag",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": seller_business_registration_number_error_flag",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": seller_merchant_category_code_error_flag",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": seller_street_address_error_flag",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": seller_city_name_error_flag",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": seller_region_code_error_flag",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": seller_postal_code_error_flag",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": seller_country_code_error_flag",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": seller_business_phone_number_error_flag",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": seller_email_address_error_flag",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": seller_url_error_flag",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": seller_currency_code_error_flag",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": authorized_signer_first_name_error_flag",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": authorized_signer_last_name_error_flag",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": language_error_flag",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": jcb_error_flag",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": significant_owner_1_first_name_error_flag",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": significant_owner_1_last_name_error_flag",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": significant_owner_1_identification_number_error_flag",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": significant_owner_1_date_of_birth_error_flag",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": significant_owner_1_street_address_error_flag",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": significant_owner_1_city_name_error_flag",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": significant_owner_1_region_code_error_flag",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": significant_owner_1_postal_code_error_flag",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": significant_owner_1_country_code_error_flag",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": marketing_indicator_error_flag",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": ownership_type_indicator_error_flag",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": seller_transacting_indicator_error_flag",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": se_detail_status_code_error_flag",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": se_detail_status_code_change_date_error_flag",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": seller_street_address_2_error_flag",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": seller_street_address_3_error_flag",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": seller_street_address_4_error_flag",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": seller_street_address_5_error_flag",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": authorized_signer_title_error_flag",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": significant_owner_1_street_address_2_error_flag",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": significant_owner_1_street_address_3_error_flag",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": significant_owner_1_street_address_4_error_flag",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": significant_owner_1_street_address_5_error_flag",
+        "doc": "xxx",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },

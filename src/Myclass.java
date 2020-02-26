@@ -1,4 +1,8 @@
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+import java.security.Timestamp;
+import java.sql.SQLOutput;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -6,12 +10,18 @@ import java.time.LocalDate;
 import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
+import java.util.concurrent.TimeUnit;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 
 /**
  * Created by mming on 9/9/16.
  */
 public class Myclass {
+    private final PipelineSourceBigQueryConfiguration pipelineSourceConfiguration = new PipelineSourceBigQueryConfiguration();
+    public static final String IC_PLUS_FEE_SCHEDULE_ID = "1251";
+    private String testStr = "";
     private HashMap<Character, char[]> map;
 
     public void printArray(int[] arrs){
@@ -3525,74 +3535,126 @@ public class Myclass {
             return max;
         }
     }
-    public static void main(String[] args) {
-        Myclass mc = new Myclass();
-        String temp =  "SELECT " +
-                "  entityNumber as app_id, " +
-                "  SUM(amount) AS total_tpv, " +
-                "  SUM(totalCharge) AS assessment_fee, " +
-                "  LAST_DAY(CURRENT_DATE() - INTERVAL 2 MONTH) + INTERVAL 1 DAY AS from_date, " +
-                "  LAST_DAY(CURRENT_DATE() - INTERVAL 1 MONTH) AS to_date " +
-                "FROM " +
-                "  `chase_dfr_service_charge` s, " +
-                "  `chase_dfr_header` h " +
-                "WHERE " +
-                "  s.reportHeaderId = h.id " +
-                "  AND category = 'IA' " +
-                "  AND subCategory = 'AS' " +
-                "  AND EXTRACT(month FROM reportDateFrom) = EXTRACT(month FROM current_date()) - 1 " +
-                "GROUP BY " +
-                "  entityNumber;";
 
-        String s = "-2.2";
-        double d = Double.parseDouble(s);
-        long l =(long) (d * 10l);
-
-
-
-
-
-        System.out.println(mc.buildMarkupQuery());
-
-    }
-    private String buildMarkupQuery()   {
-        return "SELECT p.sender_account_id as account_id" +
+    public String buildV3PaymentDataQuery()  {
+        return "SELECT p.recipient_account_id as account_id" +
                 ", p.id as payment_id" +
                 ", p.type as type" +
                 ", af.totalFee as act72_fee" +
                 ", ai.settlementAmount as amount" +
-                ", ai.method_of_payment as payment_method" +
+                ", ai.methodOfPayment as payment_method" +
                 ", af.category as category" +
                 ", af.subCategory as subCategory" +
                 ", fs.id as mark_up_fee_id" +
                 ", fs.fixed_fee_amount as flat_fee" +
                 ", fs.basis_point as basis_rate " +
                 ", ai.entityNumber as transaction_division_id " +
-                "FROM " + " wepay.payments" + " AS p " +
-                // Since all payments from ACT72 are credit card payment,
-                // for charge payment recipient will be IC+ merchant and sender will be credit card,
-                // for refund sender will be IC+ merchant and recipient will be credit card.
-                "INNER JOIN " + " wepay.chase_dfr_transaction_information_detail" + " AS ai " +
-                "ON ai.merchant_order_id = p.id " +
-                "INNER JOIN " +  " wepay.chase_dfr_transaction_fee_detail" + " AS af " +
+                "FROM " + this.pipelineSourceConfiguration.getMappedTableName("payments") + " AS p " +
+                "INNER JOIN " + this.pipelineSourceConfiguration.getMappedTableName("chase_dfr_transaction_fee_information_detail") + " AS ai " +
+                "ON ai.merchantOrderNumber = CONCAT('\"', CAST(p.id AS STRING), '\"') " +
+                "INNER JOIN " +  this.pipelineSourceConfiguration.getMappedTableName("chase_dfr_transaction_fee_detail") + " AS af " +
                 "ON ai.reportRowId = af.informationReportRowId " +
-                "INNER JOIN " +  " wepay.groups" + " AS g " +
-                "ON g.account_id = p.`sender_account_id` " +
-                "INNER JOIN " + " wepay.shadow_group_mapping" + " AS sd " +
-                "ON sd.group_id = g.id " +
-                "INNER JOIN " + " wepay.merchant_fee_schedule_mapping" + " AS mfs " +
-                "ON mfs.merchant_id = sd.`mapping_object_id` " +
-                "AND mfs.`currency` = ai.`settlementCurrency` " +
-                "INNER JOIN " + " wepay.fee_schedule" + " AS fs " +
-                "ON mfs.cc_ic = fs.id " +
-                "INNER JOIN " + " wepay.chase_dfr_header" + " AS h " +
+                "INNER JOIN " +  this.pipelineSourceConfiguration.getMappedTableName("groups") + " AS g " +
+                "ON g.account_id = p.recipient_account_id " +
+                "INNER JOIN " + this.pipelineSourceConfiguration.getMappedTableName("entity_fee_schedule_mapping_history") + " AS efs " +
+                "ON efs.entity_id = CAST(g.id AS STRING) " +
+                "AND efs.currency = ai.settlementCurrency " +
+                "INNER JOIN " +
+                "(SELECT MAX(ts_create_time) as max, entity_id FROM " +
+                this.pipelineSourceConfiguration.getMappedTableName("entity_fee_schedule_mapping_history") +
+                "WHERE UNIX_SECONDS(ts_create_time) <= " + getTimeStamp()[1] + " AND operation = 'ENABLE'" +
+                "GROUP BY entity_id) temp " +
+                "ON efs.ts_create_time = temp.max and efs.entity_id = temp.entity_id "+
+                "INNER JOIN " + this.pipelineSourceConfiguration.getMappedTableName("fee_schedule") + " AS fs " +
+                "ON efs.fee_schedule_id = fs.id " +
+                "INNER JOIN " + this.pipelineSourceConfiguration.getMappedTableName("chase_dfr_header") + " AS h " +
                 "ON ai.reportHeaderId = h.id " +
                 "WHERE af.category = 'IA' AND ( af.subCategory = 'IC' OR af.subCategory = 'AS') " +
-                "AND sd.mapping_object_type = 'merchant_account' " +
-                "AND p.fee_schedule_id = 1" + " " +
-                "AND p.type = 1 " +
+                "AND p.type = 1" + " " +
+                "AND p.fee_schedule_id = " + IC_PLUS_FEE_SCHEDULE_ID + " " +
+                "AND efs.entity_type = 'V2_GROUP' " +
+                "AND efs.fee_schedule_type = 'CC_IC' " +
                 "AND p.create_time >= " + getTimeStamp()[0] + " " +
                 "AND p.create_time < " + getTimeStamp()[1];
+    }
+    public void testAppend(String testStr) {
+        for (int i = 0; i < 3; i++) {
+            testStr += "s";
+        }
+    }
+    public static void main(String[] args) {
+        Myclass mc = new Myclass();
+        String testStr = "{\"address1\":\"4 Northeastern Blvd\",\"address2\":\"\",\"city\":\"Salem\",\"region\":\"NH\",\"postal_code\":\"03105\",\"country\":\"US\"}\n";
+        testStr.replace("\\", "");
+
+        System.out.println(testStr);
+
+
+    }
+    public Integer getEpochDaysSlashOrDash(final String date) throws ParseException {
+
+        Pattern pattern_slash = Pattern.compile("^(1[0-2]|0[1-9])/(3[01]|[12][0-9]|0[1-9])/[0-9]{4}$");
+        if (pattern_slash.matcher(date).matches()) {
+            SimpleDateFormat format = new SimpleDateFormat("MM/dd/yyyy");
+            return (int) TimeUnit.SECONDS.toDays(format.parse(date).toInstant().getEpochSecond());
+        } else {
+            SimpleDateFormat format = new SimpleDateFormat("MM-dd-yyyy");
+            return (int) TimeUnit.SECONDS.toDays(format.parse(date).toInstant().getEpochSecond());
+        }
+    }
+
+    public String buildV2PaymentDataQuery(String payments) throws Exception {
+        return getBaseQuery(payments) +
+                "INNER JOIN " + this.pipelineSourceConfiguration
+                .getMappedTableName("entity_fee_schedule_mapping_history") + " AS efs " +
+                "ON efs.entity_id = CAST(g.id AS STRING) " +
+                "AND efs.currency = ai.settlementCurrency " +
+                getLatestFeeSchedule() +
+                "WHERE p.fee_schedule_id = " + IC_PLUS_FEE_SCHEDULE_ID + " " +
+                "AND efs.entity_type = 'V2_GROUP' " +
+                "AND efs.fee_schedule_type = 'CC_IC'";
+    }
+
+    public String getBaseQuery(String payments) throws Exception {
+        return "SELECT p.recipient_account_id as account_id" +
+                ", p.id as payment_id" +
+                ", p.type as type" +
+                ", p.create_time as date_time" +
+                ", CAST(af.totalFee AS NUMERIC) as act72_fee" +
+                ", p.amount as amount" +
+                ", ai.settlementCurrency as currency" +
+                ", ai.methodOfPayment as payment_method" +
+                ", ai.actionCode as actionCode" +
+                ", af.category as category" +
+                ", af.subCategory as subCategory" +
+                ", fs.id as mark_up_fee_id" +
+                ", fs.fixed_fee_amount as flat_fee" +
+                ", fs.basis_point as basis_rate " +
+                ", ai.entityNumber as transaction_division_id " +
+                "FROM " + payments + " AS p " +
+                "INNER JOIN " + this.pipelineSourceConfiguration
+                .getMappedTableName("chase_dfr_transaction_fee_information_detail") + " AS ai " +
+                "ON  TRIM(ai.merchantOrderNumber, \"\\\"\") = CAST(p.id AS STRING) " +
+                "LEFT JOIN " +
+                " (SELECT * FROM " + this.pipelineSourceConfiguration
+                .getMappedTableName("chase_dfr_transaction_fee_detail") +
+                " WHERE category = 'IA' " +
+                "  AND ( subCategory = 'IC' " +
+                "    OR subCategory = 'AS')) " +
+                " AS af " +
+                "ON ai.reportRowId = af.informationReportRowId " +
+                "INNER JOIN " + this.pipelineSourceConfiguration.getMappedTableName("groups") + " AS g " +
+                "ON g.account_id = p.recipient_account_id ";
+    }
+    public String getLatestFeeSchedule() throws Exception {
+        return "INNER JOIN " +
+                "(SELECT MAX(ts_create_time) as max, entity_id FROM " +
+                this.pipelineSourceConfiguration.getMappedTableName("entity_fee_schedule_mapping_history") +
+                "WHERE UNIX_SECONDS(ts_create_time) <= "  + " AND operation = 'ENABLE'" +
+                "GROUP BY entity_id) temp " +
+                "ON efs.ts_create_time = temp.max and efs.entity_id = temp.entity_id " +
+                "INNER JOIN " + this.pipelineSourceConfiguration.getMappedTableName("fee_schedule") + " AS fs " +
+                "ON efs.fee_schedule_id = fs.id ";
     }
 
     private long[] getTimeStamp() {
@@ -3611,23 +3673,6 @@ public class Myclass {
         return new long[]{epochStart, epochEnd};
     }
 
-    private String buildFIN11Query()  {
-        // get total assessment_fee in app level from FIN11
-        return "SELECT " +
-                "  entityNumber as transaction_division_id, " +
-                "  SUM(amount) AS total_tpv, " +
-                "  SUM(totalCharge) AS assessment_fee, " +
-                "  LAST_DAY(CURRENT_DATE() - INTERVAL 2 MONTH) + INTERVAL 1 DAY AS from_date, " +
-                "  LAST_DAY(CURRENT_DATE() - INTERVAL 1 MONTH) AS to_date " +
-                "FROM `chase_dfr_service_charge` s, `chase_dfr_header` h " +
-                "WHERE " +
-                "  s.reportHeaderId = h.id " +
-                "  AND category = 'IA' " +
-                "  AND subCategory = 'AS' " +
-                "  AND EXTRACT(month FROM reportDateFrom) = EXTRACT(month FROM current_date()) - 1 " +
-                "GROUP BY " +
-                "  entityNumber;";
-    }
 
     private String buildACT72Query() {
         // get total assessment_fee in app level from ACT72
@@ -3638,7 +3683,7 @@ public class Myclass {
                 "  EXTRACT(month FROM current_date()) - 1 AS from_date, " +
                 "  EXTRACT(month FROM current_date()) - 1 AS to_date " +
                 "FROM `chase_dfr_transaction_fee_detail` AS d, " +
-                "  `chase_dfr_transaction_information_detail` AS i, " +
+                "  `chase_dfr_transaction_fee_information_detail` AS i, " +
                 "  `chase_dfr_header` h " +
                 "WHERE " +
                 "  i.reportHeaderId = h.id " +

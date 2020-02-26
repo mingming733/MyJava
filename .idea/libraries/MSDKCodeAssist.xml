@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="MSDKCodeAssist">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/MSDKCodeAssist.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

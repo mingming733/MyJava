@@ -2,14 +2,64 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e55770b9-cc15-45b5-9a80-148e5675de70" name="Default" comment="m//t">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/TCPConnectServerSim.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/jpmc_msdk.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/jpmc_msdk1_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/july_freshbooks_payments_including_refund" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/MSDKCodeAssist.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/MSDKCodeAssist1_4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/TCPConnectServerSim.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/TCPConnectServerSim1_4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/commons-lang-2.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/commons-lang-2.6_1_4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/definitions.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/definitions1_4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/jpmc-msdk.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/jpmc-msdk1_4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/msdk-proxy.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/msdk-proxy1_4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AmOA1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AmOA12.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AmOA2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PipelineSourceBigQueryConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ReadFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/input1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/input2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_bq.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyJava.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MyJava.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/input" beforeDir="false" afterPath="$PROJECT_DIR$/input" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyJava/CoordComparator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/CoordComparator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyJava/Coordinate1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/Coordinate1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyJava/DataPoint.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/DataPoint.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyJava/Enter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/Enter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyJava/Interval.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/Interval.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyJava/KClosestPoint_Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/KClosestPoint_Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyJava/ListNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/ListNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyJava/ListNodeComparator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/ListNodeComparator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyJava/MatrixComparator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/MatrixComparator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyJava/MyThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/MyThread.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyJava/Myclass$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/Myclass$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyJava/Myclass$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/Myclass$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyJava/Myclass$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/Myclass$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyJava/Myclass$Coordinate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/Myclass$Coordinate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyJava/Myclass$Coordination.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/Myclass$Coordination.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyJava/Myclass$Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/Myclass$Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyJava/Myclass$findMedianFromDataStream.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/Myclass$findMedianFromDataStream.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyJava/Myclass.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/Myclass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyJava/NodeComparator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/NodeComparator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyJava/Pair.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/Pair.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyJava/Point2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/Point2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyJava/Position.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/Position.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyJava/Rect.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/Rect.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyJava/TreeLinkNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/TreeLinkNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyJava/TreeNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/TreeNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyJava/UnionFind.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/UnionFind.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Myclass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Myclass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.sql" beforeDir="false" afterPath="$PROJECT_DIR$/test.sql" afterDir="false" />
     </list>
-    <ignored path="MyJava.iws" />
-    <ignored path=".idea/workspace.xml" />
-    <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,41 +79,6 @@
   <component name="FavoritesManager">
     <favorites_list name="MyJava" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Myclass.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="3587" column="57" selection-start-line="3587" selection-start-column="57" selection-end-line="3587" selection-end-column="57" />
-              <folding>
-                <element signature="e#22430#22431#0" expanded="true" />
-                <element signature="e#22486#22487#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="183" column="128" selection-start-line="183" selection-start-column="128" selection-end-line="183" selection-end-column="128" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/input">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -71,105 +86,8 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>add(ser</find>
-      <find>742</find>
-      <find>4816</find>
-      <find>dedup</find>
-      <find>8398</find>
-      <find>5172</find>
-      <find>main(</find>
-      <find>try</find>
-      <find>&quot;</find>
-      <find>e</find>
-      <find>sub_ca</find>
-      <find>row_id</find>
-      <find>，</find>
-      <find>e00</find>
-      <find />
-      <find>\n</find>
-      <find>489455855</find>
-      <find>g\.</find>
-      <find>ap.</find>
-      <find>payments</find>
-      <find>fee_det</find>
-      <find>fee_schedule_mapping</find>
-      <find>sd\.</find>
-      <find>fee_schedu</find>
-      <find>shadow</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>&quot;'&quot;</replace>
-      <replace>&quot;，&quot;</replace>
-      <replace>，</replace>
-      <replace>php content/index.php upgrade/forcePaymentRequestToFailed/</replace>
-      <replace>php content/index.php upgrade/restoreMoneyToGroupAfterCancel/</replace>
-      <replace>OR</replace>
-      <replace>&quot;,&quot;</replace>
-      <replace>,</replace>
-      <replace>&quot;wepay.</replace>
-    </replaceStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/Wordsearch.java" />
-        <option value="$PROJECT_DIR$/src/GrayCode.java" />
-        <option value="$PROJECT_DIR$/src/Unique_binary_search_trees_ii.java" />
-        <option value="$PROJECT_DIR$/src/PaymentCardTypeEnum.java" />
-        <option value="$PROJECT_DIR$/src/Queue.java" />
-        <option value="$PROJECT_DIR$/src/MyQueue.java" />
-        <option value="$PROJECT_DIR$/src/Intuit.java" />
-        <option value="$PROJECT_DIR$/src/ClassicSingleton.java" />
-        <option value="$PROJECT_DIR$/src/LRUCache.java" />
-        <option value="$PROJECT_DIR$/src/Repeat.java" />
-        <option value="$PROJECT_DIR$/src/MyHeap.java" />
-        <option value="$PROJECT_DIR$/src/SummaryRanges.java" />
-        <option value="$PROJECT_DIR$/src/CalculatorIII.java" />
-        <option value="$PROJECT_DIR$/src/TwoSumIII.java" />
-        <option value="$PROJECT_DIR$/src/MaxStack.java" />
-        <option value="$PROJECT_DIR$/src/SmartQueue.java" />
-        <option value="$PROJECT_DIR$/src/UF.java" />
-        <option value="$PROJECT_DIR$/src/FindislandII.java" />
-        <option value="$PROJECT_DIR$/src/WordLadderII.java" />
-        <option value="$PROJECT_DIR$/src/CaptureLog.java" />
-        <option value="$PROJECT_DIR$/src/Robot.java" />
-        <option value="$PROJECT_DIR$/src/AmazonDis.java" />
-        <option value="$PROJECT_DIR$/src/kSubString.java" />
-        <option value="$PROJECT_DIR$/src/KSubString.java" />
-        <option value="$PROJECT_DIR$/src/Amazon2SumSmaller.java" />
-        <option value="$PROJECT_DIR$/src/AmazonRobot.java" />
-        <option value="$PROJECT_DIR$/src/SteakHouse.java" />
-        <option value="$PROJECT_DIR$/src/AmazonFreq.java" />
-        <option value="$PROJECT_DIR$/src/AmazonLog.java" />
-        <option value="$PROJECT_DIR$/src/AlienDictionary.java" />
-        <option value="$PROJECT_DIR$/src/Suduko.java" />
-        <option value="$PROJECT_DIR$/src/NestedIterator.java" />
-        <option value="$PROJECT_DIR$/src/Solution1.java" />
-        <option value="$PROJECT_DIR$/src/Wepay.java" />
-        <option value="$PROJECT_DIR$/src/Solution.java" />
-        <option value="$PROJECT_DIR$/src/GoogleRedBlueTree.java" />
-        <option value="$PROJECT_DIR$/src/CmsSe.java" />
-        <option value="$PROJECT_DIR$/src/StringProc.java" />
-        <option value="$PROJECT_DIR$/ChaseISE.txt" />
-        <option value="$PROJECT_DIR$/src/ChaseISE.java" />
-        <option value="$PROJECT_DIR$/src/OnePoint3.java" />
-        <option value="$PROJECT_DIR$/succ.txt" />
-        <option value="$PROJECT_DIR$/payement_legs" />
-        <option value="$PROJECT_DIR$/prs" />
-        <option value="$USER_HOME$/Downloads/JOAAIVF.A7Z1D05G.07252019.JOSD3609300220.HomeTrust36093_20190725130636_A8Z6QAW6_VALI-931_206.JOAAIVF" />
-        <option value="$PROJECT_DIR$/19'th payment still in started on 07/litle_0722_started_ach_trace_numbers" />
-        <option value="$PROJECT_DIR$/19'th payment still in started on 07/litle_stuck_batch_22_to_early25" />
-        <option value="$PROJECT_DIR$/19'th payment still in started on 07/25" />
-        <option value="$PROJECT_DIR$/input" />
-        <option value="$PROJECT_DIR$/test.sql" />
-        <option value="$PROJECT_DIR$/src/Myclass.java" />
-      </list>
-    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -177,32 +95,14 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="Bundled (Maven 3)" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="145" />
-    <option name="y" value="41" />
-    <option name="width" value="1428" />
-    <option name="height" value="914" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes />
-  </component>
+  <component name="ProjectId" id="1SZJIjriT06yYjbCMxvS96r2XDb" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557187396551" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/json-simple-1.1.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -210,6 +110,9 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$" />
@@ -547,6 +450,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test" />
+      <module name="MyJava" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -616,10 +527,12 @@
       <item itemvalue="Application.Myclass" />
       <item itemvalue="Application.Repeat" />
       <item itemvalue="Application.MyHeap" />
+      <item itemvalue="Application.Test" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Myclass" />
+        <item itemvalue="Application.Test" />
         <item itemvalue="Application.MyHeap" />
         <item itemvalue="Application.Repeat" />
       </list>
@@ -855,81 +768,18 @@
       <is-autoscroll-to-source value="true" />
     </todo-panel>
   </component>
-  <component name="ToolWindowManager">
-    <frame x="205" y="23" width="1161" height="995" extended-state="0" />
-    <editor active="true" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.19396552" />
-      <window_info id="Structure" order="1" weight="0.25" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="UI Designer" order="3" />
-      <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info id="Palette&#9;" order="5" />
-      <window_info id="Image Layers" order="6" />
-      <window_info id="DB Browser" order="7" weight="0.32978722" />
-      <window_info id="Project Explorer" order="8" weight="0.32978722" />
-      <window_info id="Job Explorer" order="9" weight="0.32935154" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32941177" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49713877" weight="0.51937985" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49713877" weight="0.5322793" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32935917" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5028612" side_tool="true" weight="0.2991453" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32786885" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.6626937" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.31620553" />
-      <window_info anchor="bottom" id="DB Execution Console" order="11" />
-      <window_info anchor="bottom" id="Console" order="12" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven Projects" order="4" />
-      <window_info anchor="right" id="Designer" order="5" />
-      <window_info anchor="right" id="Database" order="6" />
-      <window_info anchor="right" id="Capture Analysis" order="7" />
-      <window_info anchor="right" auto_hide="true" x="552" y="287" width="467" height="430" id="Coverage" internal_type="SLIDING" order="8" side_tool="true" type="FLOATING" weight="0.3297568" />
-      <window_info anchor="right" id="Maven" order="9" />
-      <window_info anchor="right" id="Theme Preview" order="10" />
-    </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.19396552" />
-      <window_info id="Structure" order="1" weight="0.25" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="UI Designer" order="3" />
-      <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info id="Palette&#9;" order="5" />
-      <window_info id="Image Layers" order="6" />
-      <window_info id="DB Browser" order="7" weight="0.32978722" />
-      <window_info id="Project Explorer" order="8" weight="0.32978722" />
-      <window_info id="Job Explorer" order="9" weight="0.32935154" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32941177" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49713877" visible="true" weight="0.51937985" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49713877" weight="0.5322793" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32935917" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5028612" side_tool="true" weight="0.2991453" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32786885" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.6626937" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.31620553" />
-      <window_info anchor="bottom" id="DB Execution Console" order="11" />
-      <window_info anchor="bottom" id="Console" order="12" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven Projects" order="4" />
-      <window_info anchor="right" id="Designer" order="5" />
-      <window_info anchor="right" id="Database" order="6" />
-      <window_info anchor="right" id="Capture Analysis" order="7" />
-      <window_info anchor="right" auto_hide="true" x="552" y="287" width="467" height="430" id="Coverage" internal_type="SLIDING" order="8" side_tool="true" type="FLOATING" weight="0.3297568" />
-      <window_info anchor="right" id="Maven" order="9" />
-      <window_info anchor="right" id="Theme Preview" order="10" />
-    </layout-to-restore>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -945,237 +795,203 @@
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/OrderDependencySolution.java</url>
           <line>54</line>
-          <properties />
           <option name="timeStamp" value="41" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/KNearestPoint.java</url>
           <line>23</line>
-          <properties />
           <option name="timeStamp" value="61" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/KthNearest.java</url>
           <line>13</line>
-          <properties />
           <option name="timeStamp" value="66" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/KthNearest.java</url>
           <line>33</line>
-          <properties />
           <option name="timeStamp" value="67" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/InsiderTrader.java</url>
           <line>85</line>
-          <properties />
           <option name="timeStamp" value="90" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Myclass.java</url>
-          <line>1641</line>
-          <properties />
+          <line>1651</line>
           <option name="timeStamp" value="145" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Myclass.java</url>
-          <line>1661</line>
-          <properties />
+          <line>1671</line>
           <option name="timeStamp" value="148" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Myclass.java</url>
-          <line>1954</line>
-          <properties />
+          <line>1964</line>
           <option name="timeStamp" value="157" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/SurroundingRegion.java</url>
           <line>38</line>
-          <properties />
           <option name="timeStamp" value="163" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/SurroundingRegion.java</url>
           <line>25</line>
-          <properties />
           <option name="timeStamp" value="164" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/GrayCode.java</url>
           <line>12</line>
-          <properties />
           <option name="timeStamp" value="198" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Unique_binary_search_trees_ii.java</url>
           <line>18</line>
-          <properties />
           <option name="timeStamp" value="199" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Myclass.java</url>
-          <line>2073</line>
-          <properties />
+          <line>2083</line>
           <option name="timeStamp" value="200" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Repeat.java</url>
           <line>49</line>
-          <properties />
           <option name="timeStamp" value="221" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/MyHeap.java</url>
           <line>76</line>
-          <properties />
           <option name="timeStamp" value="233" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Myclass.java</url>
-          <line>2648</line>
-          <properties />
+          <line>2658</line>
           <option name="timeStamp" value="267" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Myclass.java</url>
-          <line>2766</line>
-          <properties />
+          <line>2776</line>
           <option name="timeStamp" value="274" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Myclass.java</url>
-          <line>2784</line>
-          <properties />
+          <line>2794</line>
           <option name="timeStamp" value="276" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Myclass.java</url>
-          <line>2811</line>
-          <properties />
+          <line>2821</line>
           <option name="timeStamp" value="281" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Myclass.java</url>
-          <line>2897</line>
-          <properties />
+          <line>2907</line>
           <option name="timeStamp" value="283" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Myclass.java</url>
-          <line>2982</line>
-          <properties />
+          <line>2992</line>
           <option name="timeStamp" value="297" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Myclass.java</url>
-          <line>3049</line>
-          <properties />
+          <line>3059</line>
           <option name="timeStamp" value="298" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Myclass.java</url>
-          <line>3171</line>
-          <properties />
+          <line>3181</line>
           <option name="timeStamp" value="302" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Myclass.java</url>
-          <line>3183</line>
-          <properties />
+          <line>3193</line>
           <option name="timeStamp" value="303" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <condition expression="i==3" language="JAVA" />
           <url>file://$PROJECT_DIR$/src/Myclass.java</url>
-          <line>3291</line>
-          <properties />
+          <line>3301</line>
           <option name="timeStamp" value="306" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Myclass.java</url>
-          <line>3372</line>
-          <properties />
+          <line>3382</line>
           <option name="timeStamp" value="309" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/FindislandII.java</url>
           <line>19</line>
-          <properties />
           <option name="timeStamp" value="320" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/AmazonRobot.java</url>
           <line>26</line>
-          <properties />
           <option name="timeStamp" value="331" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/AmazonDis.java</url>
           <line>36</line>
-          <properties />
           <option name="timeStamp" value="343" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/AmazonLog.java</url>
           <line>44</line>
-          <properties />
           <option name="timeStamp" value="353" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Solution1.java</url>
           <line>57</line>
-          <properties />
           <option name="timeStamp" value="356" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Solution1.java</url>
           <line>55</line>
-          <properties />
           <option name="timeStamp" value="359" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Solution1.java</url>
           <line>45</line>
-          <properties />
           <option name="timeStamp" value="360" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Myclass.java</url>
-          <line>3455</line>
-          <properties />
+          <line>3465</line>
           <option name="timeStamp" value="361" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Suduko.java</url>
           <line>44</line>
-          <properties />
           <option name="timeStamp" value="394" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Wepay.java</url>
           <line>266</line>
-          <properties />
           <option name="timeStamp" value="461" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/StringProc.java</url>
           <line>84</line>
-          <properties />
           <option name="timeStamp" value="462" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/StringProc.java</url>
           <line>104</line>
-          <properties />
           <option name="timeStamp" value="464" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/ChaseISE.java</url>
           <line>84</line>
-          <properties />
           <option name="timeStamp" value="470" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ReadFile.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="471" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -1183,331 +999,6 @@
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/src.zip!/java/lang/StringBuilder.java" />
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/src.zip!/java/lang/AbstractStringBuilder.java" />
-    <entry file="file://$PROJECT_DIR$/src/TwoSumIII.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MaxStack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="41" selection-start-line="5" selection-start-column="7" selection-end-line="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SmartQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LRUCache.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-561">
-          <caret line="20" column="10" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MyHeap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="36" column="33" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/UF.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="15" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/WordLadderII.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Downloads/JSON-java-master.zip!/JSON-java-master/CookieList.java" />
-    <entry file="jar://$USER_HOME$/Downloads/JSON-java-master.zip!/JSON-java-master/CDL.java" />
-    <entry file="file://$PROJECT_DIR$/src/FindislandII.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="49" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sql.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AmazonKSubString.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="45" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Amazon2SumSmaller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="40" column="2" selection-start-line="40" selection-start-column="2" selection-end-line="40" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AmazonDis.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="70" column="9" selection-start-line="70" selection-start-column="9" selection-end-line="70" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AmazonFreq.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="56" column="36" selection-start-line="56" selection-start-column="36" selection-end-line="56" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AmazonSteakHouse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="7" column="44" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AmazonRobot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="38" column="1" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
-          <folding>
-            <element signature="imports" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AmazonLog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="46" column="49" selection-start-line="46" selection-start-column="49" selection-end-line="46" selection-end-column="49" />
-          <folding>
-            <element signature="imports" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AlienDictionary.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="39" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Suduko.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="56" column="5" selection-start-line="4" selection-start-column="4" selection-end-line="56" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/NestedIterator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="28" column="47" selection-start-line="28" selection-start-column="47" selection-end-line="28" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CaptureLog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1170">
-          <caret line="87" column="22" selection-start-line="87" selection-start-column="22" selection-end-line="87" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/amazon.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Solution1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="42" column="9" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/src.zip!/java/util/Comparator.java" />
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/src.zip!/java/lang/String.java" />
-    <entry file="file://$PROJECT_DIR$/src/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="16" column="26" selection-end-line="40" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GoogleRedBlueTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Wepay.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2160">
-          <caret line="144" column="12" selection-start-line="144" selection-start-column="12" selection-end-line="144" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/OnePoint3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="11" selection-start-column="2" selection-end-line="52" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/text/DateFormat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4860">
-          <caret line="360" column="16" selection-start-line="360" selection-start-column="16" selection-end-line="360" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/facebook.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ChaseISE.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1410">
-          <caret line="94" column="19" selection-start-line="94" selection-start-column="19" selection-end-line="94" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mcc.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="1420" selection-start-column="1420" selection-end-column="1420" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/untitled.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="27" selection-start-column="27" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChaseISE.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4125">
-          <caret line="275" column="18" selection-start-line="275" selection-start-column="18" selection-end-line="275" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MerchantCategory.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="4" selection-start-line="36" selection-end-line="36" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/prs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="67" selection-start-line="35" selection-start-column="67" selection-end-line="35" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/19'th payment still in started on 07/25">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="99" selection-start-column="99" selection-end-column="99" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/19'th payment still in started on 07/litle_0722_started_ach_trace_numbers">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="405" selection-start-column="396" selection-end-column="405" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/19'th payment still in started on 07/litle_stuck_batch_22_to_early25">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="10" selection-end-column="228" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/succ.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="3" selection-start-column="9" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/StringProc.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1680">
-          <caret line="112" column="25" selection-start-line="112" selection-start-column="25" selection-end-line="112" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CmsSe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2055">
-          <caret line="137" column="31" selection-start-line="137" selection-start-column="31" selection-end-line="137" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/payement_legs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" selection-start-line="9" selection-end-line="35" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/JOAAIVF.A7Z1D05G.07252019.JOSD3609300220.HomeTrust36093_20190725130636_A8Z6QAW6_VALI-931_206.JOAAIVF">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="90" selection-start-line="7" selection-start-column="90" selection-end-line="7" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/input">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="183" column="128" selection-start-line="183" selection-start-column="128" selection-end-line="183" selection-end-column="128" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Myclass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="3587" column="57" selection-start-line="3587" selection-start-column="57" selection-end-line="3587" selection-end-column="57" />
-          <folding>
-            <element signature="e#22430#22431#0" expanded="true" />
-            <element signature="e#22486#22487#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
   </component>
   <component name="masterDetails">
     <states>
