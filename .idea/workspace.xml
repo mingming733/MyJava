@@ -2,34 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e55770b9-cc15-45b5-9a80-148e5675de70" name="Default" comment="m//t">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/TCPConnectServerSim.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/jpmc_msdk.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/jpmc_msdk1_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/july_freshbooks_payments_including_refund" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/MSDKCodeAssist.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/MSDKCodeAssist1_4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/TCPConnectServerSim.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/TCPConnectServerSim1_4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/commons-lang-2.6.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/commons-lang-2.6_1_4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/definitions.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/definitions1_4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/jpmc-msdk.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/jpmc-msdk1_4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/msdk-proxy.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/msdk-proxy1_4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AmOA1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AmOA12.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AmOA2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PipelineSourceBigQueryConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ReadFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/input1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/input2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_bq.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/input2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/input3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AmazonSolution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PureStorage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PurgeCC.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyJava.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MyJava.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/input" beforeDir="false" afterPath="$PROJECT_DIR$/input" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MyJava/CoordComparator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/CoordComparator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MyJava/Coordinate1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/Coordinate1.class" afterDir="false" />
@@ -57,10 +36,10 @@
       <change beforePath="$PROJECT_DIR$/out/production/MyJava/TreeLinkNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/TreeLinkNode.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MyJava/TreeNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/TreeNode.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MyJava/UnionFind.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/UnionFind.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyJava/input2" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/input2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AML.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AML.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Myclass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Myclass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.sql" beforeDir="false" afterPath="$PROJECT_DIR$/test.sql" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,9 +54,6 @@
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="MyJava" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -96,6 +72,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectId" id="1SZJIjriT06yYjbCMxvS96r2XDb" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -118,19 +98,13 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager" selected="Application.Myclass">
+    <configuration default="true" type="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="ArquillianJUnit" factoryName="">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -363,7 +337,7 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
-    <configuration default="true" type="AndroidRunConfigurationType">
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
       <option name="DEPLOY_AS_INSTANT" value="false" />
@@ -377,8 +351,6 @@
       <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
       <option name="FORCE_STOP_RUNNING_APP" value="true" />
       <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
       <option name="DEBUGGER_TYPE" value="Java" />
       <Java />
       <Profilers>
@@ -392,20 +364,19 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="AndroidTestRunConfigurationType">
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
       <option name="TESTING_TYPE" value="0" />
-      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
       <option name="METHOD_NAME" value="" />
       <option name="CLASS_NAME" value="" />
       <option name="PACKAGE_NAME" value="" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
       <option name="EXTRA_OPTIONS" value="" />
+      <option name="INCLUDE_GRADLE_EXTRA_OPTIONS" value="true" />
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
       <option name="FORCE_STOP_RUNNING_APP" value="true" />
       <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
       <option name="DEBUGGER_TYPE" value="Java" />
       <Java />
       <Profilers>
@@ -416,12 +387,6 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="Applet">
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <method v="2">
-        <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="MyHeap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -471,7 +436,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
       <option name="filePath" />
       <option name="vmParameters" />
       <option name="alternativeJrePath" />
@@ -524,9 +489,9 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.MyHeap" />
       <item itemvalue="Application.Myclass" />
       <item itemvalue="Application.Repeat" />
-      <item itemvalue="Application.MyHeap" />
       <item itemvalue="Application.Test" />
     </list>
     <recent_temporary>
@@ -538,6 +503,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -773,13 +739,12 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -788,6 +753,32 @@
     <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
       <collection />
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1358" height="280" key="GridCell.Tab.0.bottom" timestamp="1599770295234">
+      <screen x="-2506" y="-367" width="2506" height="1417" />
+    </state>
+    <state width="1358" height="280" key="GridCell.Tab.0.bottom/-2506.-367.2506.1417/0.23.1680.1027@-2506.-367.2506.1417" timestamp="1599770295234" />
+    <state width="1358" height="280" key="GridCell.Tab.0.bottom/53.23.1627.1027@53.23.1627.1027" timestamp="1599692460714" />
+    <state width="1358" height="280" key="GridCell.Tab.0.bottom/54.23.1626.1027@54.23.1626.1027" timestamp="1599452938390" />
+    <state width="1358" height="280" key="GridCell.Tab.0.center" timestamp="1599770295233">
+      <screen x="-2506" y="-367" width="2506" height="1417" />
+    </state>
+    <state width="1358" height="280" key="GridCell.Tab.0.center/-2506.-367.2506.1417/0.23.1680.1027@-2506.-367.2506.1417" timestamp="1599770295233" />
+    <state width="1358" height="280" key="GridCell.Tab.0.center/53.23.1627.1027@53.23.1627.1027" timestamp="1599692460714" />
+    <state width="1358" height="280" key="GridCell.Tab.0.center/54.23.1626.1027@54.23.1626.1027" timestamp="1599452938390" />
+    <state width="1358" height="280" key="GridCell.Tab.0.left" timestamp="1599770295233">
+      <screen x="-2506" y="-367" width="2506" height="1417" />
+    </state>
+    <state width="1358" height="280" key="GridCell.Tab.0.left/-2506.-367.2506.1417/0.23.1680.1027@-2506.-367.2506.1417" timestamp="1599770295233" />
+    <state width="1358" height="280" key="GridCell.Tab.0.left/53.23.1627.1027@53.23.1627.1027" timestamp="1599692460713" />
+    <state width="1358" height="280" key="GridCell.Tab.0.left/54.23.1626.1027@54.23.1626.1027" timestamp="1599452938389" />
+    <state width="1358" height="280" key="GridCell.Tab.0.right" timestamp="1599770295234">
+      <screen x="-2506" y="-367" width="2506" height="1417" />
+    </state>
+    <state width="1358" height="280" key="GridCell.Tab.0.right/-2506.-367.2506.1417/0.23.1680.1027@-2506.-367.2506.1417" timestamp="1599770295234" />
+    <state width="1358" height="280" key="GridCell.Tab.0.right/53.23.1627.1027@53.23.1627.1027" timestamp="1599692460714" />
+    <state width="1358" height="280" key="GridCell.Tab.0.right/54.23.1626.1027@54.23.1626.1027" timestamp="1599452938390" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -819,17 +810,17 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Myclass.java</url>
-          <line>1651</line>
+          <line>1657</line>
           <option name="timeStamp" value="145" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Myclass.java</url>
-          <line>1671</line>
+          <line>1677</line>
           <option name="timeStamp" value="148" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Myclass.java</url>
-          <line>1964</line>
+          <line>1970</line>
           <option name="timeStamp" value="157" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -854,7 +845,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Myclass.java</url>
-          <line>2083</line>
+          <line>2089</line>
           <option name="timeStamp" value="200" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -869,58 +860,58 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Myclass.java</url>
-          <line>2658</line>
+          <line>2664</line>
           <option name="timeStamp" value="267" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Myclass.java</url>
-          <line>2776</line>
+          <line>2782</line>
           <option name="timeStamp" value="274" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Myclass.java</url>
-          <line>2794</line>
+          <line>2800</line>
           <option name="timeStamp" value="276" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Myclass.java</url>
-          <line>2821</line>
+          <line>2827</line>
           <option name="timeStamp" value="281" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Myclass.java</url>
-          <line>2907</line>
+          <line>2913</line>
           <option name="timeStamp" value="283" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Myclass.java</url>
-          <line>2992</line>
+          <line>2998</line>
           <option name="timeStamp" value="297" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Myclass.java</url>
-          <line>3059</line>
+          <line>3065</line>
           <option name="timeStamp" value="298" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Myclass.java</url>
-          <line>3181</line>
+          <line>3187</line>
           <option name="timeStamp" value="302" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Myclass.java</url>
-          <line>3193</line>
+          <line>3199</line>
           <option name="timeStamp" value="303" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <condition expression="i==3" language="JAVA" />
           <url>file://$PROJECT_DIR$/src/Myclass.java</url>
-          <line>3301</line>
+          <line>3307</line>
           <option name="timeStamp" value="306" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Myclass.java</url>
-          <line>3382</line>
+          <line>3388</line>
           <option name="timeStamp" value="309" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -960,7 +951,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Myclass.java</url>
-          <line>3465</line>
+          <line>3471</line>
           <option name="timeStamp" value="361" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -992,6 +983,21 @@
           <url>file://$PROJECT_DIR$/src/ReadFile.java</url>
           <line>14</line>
           <option name="timeStamp" value="471" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/AML.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="472" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/AML.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="473" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Myclass.java</url>
+          <line>3577</line>
+          <option name="timeStamp" value="474" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

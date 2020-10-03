@@ -1,34 +1,8 @@
-SELECT
-  refund_p.p_id AS id,
-  refund_p.currency as currency,
-  refund_p.type AS type,
-  refund_p.payment_method as payment_method,
-  original_p.fee_schedule_id,
-  refund_p.create_time AS create_time,
-  original_p. amount AS amount,
-  refund_p.amount as refund_amount
-FROM
-  [micro-bus-121218:monolith_wepay__views_clean.payments] AS original_p
-INNER JOIN
-  [micro-bus-121218:monolith_wepay__views_clean.refunds] AS r
-ON
-  r.rpr_id = original_p.payment_request_id
-INNER JOIN (
-  SELECT
-    p.payment_request_id AS pr_id,
-    p.id AS p_id,
-    p.fee_schedule_id,
-    p.payment_method as payment_method,
-    p.currency as currency,
-    recipient_account_id,
-    type,
-    p.create_time, 
-    p.amount
-  FROM
-    [micro-bus-121218:monolith_wepay__views_clean.payments] AS p
-  WHERE
-    p.type = 4
-    AND p.create_time >= 1561939200
-    AND p.create_time < 1564617600) AS refund_p
-ON
-  r.payment_request_id = refund_p.pr_id
+INV_NA_0159596381
+INV_NA_0159615852
+NA-WEBREF-061220-2015338
+INV_NA_0159686208
+INV_NA_0153010722
+NA-WEBREF-061520-2016258
+NA-WEBREF-061520-2016394
+NA-WEBREF-032520-1974281

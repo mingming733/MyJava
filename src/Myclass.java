@@ -1,18 +1,24 @@
 
-import java.math.BigDecimal;
-import java.math.RoundingMode;
-import java.security.Timestamp;
-import java.sql.SQLOutput;
-import java.text.DateFormat;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.Clock;
+import java.time.Duration;
+import java.time.Instant;
+
 import java.time.LocalDate;
 import java.time.ZoneId;
+import java.time.ZoneOffset;
 import java.time.format.DateTimeFormatter;
+import java.time.temporal.ChronoUnit;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.util.stream.Collectors;
 
 
 /**
@@ -3582,14 +3588,212 @@ public class Myclass {
             testStr += "s";
         }
     }
-    public static void main(String[] args) {
+
+    public void alation(String[] strs) {
+
+    }
+
+
+    public static void main (String[] args) throws Exception {
         Myclass mc = new Myclass();
-        String testStr = "{\"address1\":\"4 Northeastern Blvd\",\"address2\":\"\",\"city\":\"Salem\",\"region\":\"NH\",\"postal_code\":\"03105\",\"country\":\"US\"}\n";
-        testStr.replace("\\", "");
+        mc.printEpoch();
+        System.out.println(7*24*60*60);
+    }
 
-        System.out.println(testStr);
+    public void printEpochNow() {
+        Instant instant = Instant.now();
+        long timeStampMillis = instant.toEpochMilli();
+        System.out.println(timeStampMillis/1000);
+    }
+    public void printEpoch() {
+        // utc time utc = pst + 7
+        Instant instant = Instant.parse("2020-09-01T21:00:01.00Z");
+        System.out.println(instant.toEpochMilli() / 1000);
+    }
+    static class PairString{
+        String first;
+        String second;
+
+        public PairString(String first, String second) {
+            this.first = first;
+            this.second = second;
+        }
+    }
 
 
+    private void get20thChar() throws Exception {
+        File file = new File("input3");
+        BufferedReader br = new BufferedReader(new FileReader(file));
+        String str;
+        FileWriter myWriter = new FileWriter("outputABA.txt");
+        while ((str = br.readLine()) != null) {
+            String routing = str.substring(0, 9);
+            if (str.charAt(22) == '2') {
+                System.out.println(str.substring(28, 34));
+                myWriter.write(str + "\n");
+            }
+        }
+        myWriter.close();
+    }
+
+    private void checkABAdupe() throws Exception {
+        File file = new File("input2");
+        BufferedReader br = new BufferedReader(new FileReader(file));
+        String str;
+        FileWriter myWriter = new FileWriter("outputABA.txt");
+        Set<String> set = new HashSet<>();
+        while ((str = br.readLine()) != null) {
+            String routing = str.substring(0, 9);
+            Character recodeTypeCode = str.charAt(19);
+            if (recodeTypeCode == '0' || recodeTypeCode == '1') {
+                set.add(str.substring(0, 9));
+            } else {
+                //寻找新routing number重复的情况 ，如果要找是不是需要被删掉的routing出现重复，改成str.substring(0， 9)
+                if (set.contains(str.substring(26, 35))) {
+                    System.out.println(str.substring(26, 35));
+                }
+                set.add(str.substring(26, 35));
+            }
+        }
+        myWriter.close();
+    }
+
+    private void lowercase() throws  Exception{
+        File file = new File("input");
+        BufferedReader br = new BufferedReader(new FileReader(file));
+        String str;
+        while ((str = br.readLine()) != null) {
+            String[] words = str.split(" ");
+            String output = "";
+            for (int i = 0; i < words.length; i++) {
+                output += words[i].toLowerCase();
+                output += "_";
+            }
+            System.out.println(output.substring(0, output.length() - 1));
+        }
+    }
+
+    private void enumField() throws  Exception{
+        File file = new File("input");
+        BufferedReader br = new BufferedReader(new FileReader(file));
+        String str;
+        while ((str = br.readLine()) != null) {
+            String[] words = str.split(" ");
+            String upperspaceField = "";
+            String name = "";
+            for (int i = 0; i < words.length; i++) {
+                upperspaceField += words[i].toUpperCase();
+                upperspaceField += "_";
+                if (i == 0) {
+                    name += words[i].toLowerCase();
+                } else {
+                    name += words[i].substring(0, 1).toUpperCase() + words[i].substring(1);
+                }
+            }
+            upperspaceField = upperspaceField.substring(0, upperspaceField.length() - 1);
+            System.out.println(upperspaceField +
+                    "(\"" +
+                    str.trim() +
+                    "\", 8, FIXED_LENGTH, (b, v) -> b." +
+                    name +
+                    "(v.trim())),");
+        }
+    }
+
+    private void builder() throws  Exception{
+        File file = new File("input");
+        BufferedReader br = new BufferedReader(new FileReader(file));
+        String str;
+        while ((str = br.readLine()) != null) {
+            String[] words = str.split(" ");
+            String name = "";
+            for (int i = 0; i < words.length; i++) {
+                if (i == 0) {
+                    name += words[i].toLowerCase();
+                } else {
+                    name += words[i].substring(0, 1).toUpperCase() + words[i].substring(1);
+                }
+            }
+            System.out.println(name);
+        }
+    }
+
+    private void fields() throws  Exception{
+        File file = new File("input");
+        BufferedReader br = new BufferedReader(new FileReader(file));
+        String str;
+        while ((str = br.readLine()) != null) {
+            String[] words = str.split(" ");
+            String property = "";
+            String name = "";
+            for (int i = 0; i < words.length; i++) {
+                property += words[i].toUpperCase();
+                property += "_";
+                if (i == 0) {
+                    name += words[i].toLowerCase();
+                } else {
+                    name += words[i].substring(0, 1).toUpperCase() + words[i].substring(1);
+                }
+            }
+            property = property.substring(0, property.length() - 1).toLowerCase();
+            System.out.println("@JsonProperty(\"" +
+                    property +
+                    "\")\n" +
+                    "public abstract String " +
+                    name +
+                    "();" + "\n");
+        }
+    }
+
+    public TreeNode str2tree(String s) {
+        Stack<TreeNode> stack = new Stack<>();
+        for(int i = 0, j = i; i < s.length(); i++, j = i){
+            char c = s.charAt(i);
+            if(c == ')')    stack.pop();
+            else if(c >= '0' && c <= '9' || c == '-'){
+                while(i + 1 < s.length() && s.charAt(i + 1) >= '0' && s.charAt(i + 1) <= '9') i++;
+                TreeNode currentNode = new TreeNode(Integer.valueOf(s.substring(j, i + 1)));
+                if(!stack.isEmpty()){
+                    TreeNode parent = stack.peek();
+                    if(parent.left != null)    parent.right = currentNode;
+                    else parent.left = currentNode;
+                }
+                stack.push(currentNode);
+            }
+        }
+        return stack.isEmpty() ? null : stack.peek();
+    }
+
+    public TreeNode str2tree2(String s) {
+        if (s == null || s.length() == 0) return null;
+
+        int firstParen = s.indexOf("(");
+        int val = firstParen == -1 ?  Integer.parseInt(s) : Integer.parseInt(s.substring(0, firstParen));
+        TreeNode cur = new TreeNode(val);
+
+        if (firstParen == -1) return cur;
+
+        int start = firstParen, leftParenCount = 0;
+        for (int i = start; i < s.length(); i++) {
+            if (s.charAt(i) == '(') leftParenCount++;
+            else if (s.charAt(i) == ')') leftParenCount--;
+
+            if (leftParenCount == 0 && start == firstParen)  {
+                cur.left = str2tree(s.substring(start + 1, i));
+                start = i + 1;
+            } else if (leftParenCount == 0) {
+                cur.right = str2tree(s.substring(start + 1, i));
+            }
+        }
+        return cur;
+    }
+
+    public void getTimeStampForPaperChecks() {
+        Clock clock = Clock.system(ZoneOffset.UTC);
+        Instant beginningOfToday = Instant.now(clock).truncatedTo(ChronoUnit.DAYS); // Round down to the 00:00AM today in UTC
+        long startUnixTime = beginningOfToday.minus(Duration.ofDays(95)).getEpochSecond();
+        long endUnixTime = beginningOfToday.minus(Duration.ofDays(90)).getEpochSecond();
+        System.out.println("startUnixTime: " + startUnixTime +  " endUnixTime: "+ endUnixTime);
     }
     public Integer getEpochDaysSlashOrDash(final String date) throws ParseException {
 

@@ -1,1 +1,31 @@
-686804920,687050857,687208485,687753415,688667772
+
+php content/index.php upgrade/exportChaseAMLReport/payment_id_INV_NA_146551730.csv/INV_NA_146551730/1/1
+php content/index.php upgrade/exportChaseAMLReport/payment_id_INV_NA_0147564571.csv/INV_NA_0147564571/1/1
+php content/index.php upgrade/exportChaseAMLReport/payment_id_INV_NA_0147588674.csv/INV_NA_0147588674/1/1
+php content/index.php upgrade/exportChaseAMLReport/payment_id_INV_NA_0147593479.csv/INV_NA_0147593479/1/1
+php content/index.php upgrade/exportChaseAMLReport/payment_id_INV_NA_0147594196.csv/INV_NA_0147594196/1/1
+php content/index.php upgrade/exportChaseAMLReport/payment_id_INV_NA_0147594473.csv/INV_NA_0147594473/1/1
+php content/index.php upgrade/exportChaseAMLReport/payment_id_INV_NA_0147597838.csv/INV_NA_0147597838/1/1
+php content/index.php upgrade/exportChaseAMLReport/payment_id_INV_NA_0147699585.csv/INV_NA_0147699585/1/1
+php content/index.php upgrade/exportChaseAMLReport/payment_id_INV_NA_0147813048.csv/INV_NA_0147813048/1/1
+php content/index.php upgrade/exportChaseAMLReport/payment_id_INV_NA_0147819026.csv/INV_NA_0147819026/1/1
+php content/index.php upgrade/exportChaseAMLReport/payment_id_INV_NA_0147843686.csv/INV_NA_0147843686/1/1
+php content/index.php upgrade/exportChaseAMLReport/payment_id_NA_WEBREF-022020-1940297.csv/NA_WEBREF-022020-1940297/1/1
+php content/index.php upgrade/exportChaseAMLReport/payment_id_NA-WEBREF-022420-1943176.csv/NA_WEBREF-022420-1943176/1/1
+
+php content/index.php upgrade/exportChaseAMLReport/payment_id_NA-WEBREF-081219-1782009.csv/NA-WEBREF-081219-1782009/1/1
+
+
+INV_NA_146551730.csv.asc
+INV_NA_0147564571.csv.asc
+INV_NA_0147588674.csv.asc
+INV_NA_0147593479.csv.asc
+INV_NA_0147594196.csv.asc
+INV_NA_0147594473.csv.asc
+INV_NA_0147597838.csv.asc
+INV_NA_0147699585.csv.asc
+INV_NA_0147813048.csv.asc
+INV_NA_0147819026.csv.asc
+INV_NA_0147843686.csv.asc
+NA_WEBREF-022020-1940297.csv.asc
+NA_WEBREF-022420-1943176.csv.asc
