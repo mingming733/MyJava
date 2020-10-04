@@ -2,43 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e55770b9-cc15-45b5-9a80-148e5675de70" name="Default" comment="m//t">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AmazonSolution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PureStorage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PurgeCC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/junit_4_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/hamcrest-core-1.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/junit-4.13.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PureStorageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input" beforeDir="false" afterPath="$PROJECT_DIR$/input" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyJava/CoordComparator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/CoordComparator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyJava/Coordinate1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/Coordinate1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyJava/DataPoint.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/DataPoint.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyJava/Enter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/Enter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyJava/Interval.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/Interval.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyJava/KClosestPoint_Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/KClosestPoint_Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyJava/ListNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/ListNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyJava/ListNodeComparator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/ListNodeComparator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyJava/MatrixComparator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/MatrixComparator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyJava/MyThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/MyThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyJava/Myclass$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/Myclass$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyJava/Myclass$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/Myclass$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyJava/Myclass$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/Myclass$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyJava/Myclass$Coordinate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/Myclass$Coordinate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyJava/Myclass$Coordination.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/Myclass$Coordination.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyJava/Myclass$Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/Myclass$Solution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyJava/Myclass$findMedianFromDataStream.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/Myclass$findMedianFromDataStream.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyJava.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MyJava.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MyJava/Myclass.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/Myclass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyJava/NodeComparator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/NodeComparator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyJava/Pair.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/Pair.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyJava/Point2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/Point2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyJava/Position.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/Position.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyJava/Rect.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/Rect.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyJava/TreeLinkNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/TreeLinkNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyJava/TreeNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/TreeNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyJava/UnionFind.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/UnionFind.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyJava/input2" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/input2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AML.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AML.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyJava/PureStorage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/PureStorage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Myclass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Myclass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PureStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PureStorage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +33,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -81,6 +57,10 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557187396551" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -90,15 +70,22 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/lib" />
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.Myclass">
+  <component name="RunManager" selected="JUnit.PureStorageTest.arrangeTextBox">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -429,6 +416,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PureStorageTest.arrangeTextBox" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MyJava" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PureStorageTest" />
+      <option name="METHOD_NAME" value="arrangeTextBox" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -493,9 +491,11 @@
       <item itemvalue="Application.Myclass" />
       <item itemvalue="Application.Repeat" />
       <item itemvalue="Application.Test" />
+      <item itemvalue="JUnit.PureStorageTest.arrangeTextBox" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PureStorageTest.arrangeTextBox" />
         <item itemvalue="Application.Myclass" />
         <item itemvalue="Application.Test" />
         <item itemvalue="Application.MyHeap" />
@@ -755,30 +755,62 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1358" height="280" key="GridCell.Tab.0.bottom" timestamp="1599770295234">
+    <state width="1358" height="284" key="GridCell.Tab.0.bottom" timestamp="1601780167526">
       <screen x="-2506" y="-367" width="2506" height="1417" />
     </state>
-    <state width="1358" height="280" key="GridCell.Tab.0.bottom/-2506.-367.2506.1417/0.23.1680.1027@-2506.-367.2506.1417" timestamp="1599770295234" />
+    <state width="1358" height="284" key="GridCell.Tab.0.bottom/-2506.-367.2506.1417/0.23.1680.1027@-2506.-367.2506.1417" timestamp="1601780167526" />
+    <state width="1358" height="280" key="GridCell.Tab.0.bottom/-2506.-367.2506.1417/0.23.1680.1027@0.23.1680.1027" timestamp="1601743573150" />
     <state width="1358" height="280" key="GridCell.Tab.0.bottom/53.23.1627.1027@53.23.1627.1027" timestamp="1599692460714" />
-    <state width="1358" height="280" key="GridCell.Tab.0.bottom/54.23.1626.1027@54.23.1626.1027" timestamp="1599452938390" />
-    <state width="1358" height="280" key="GridCell.Tab.0.center" timestamp="1599770295233">
+    <state width="1358" height="280" key="GridCell.Tab.0.bottom/54.23.1626.1027@54.23.1626.1027" timestamp="1601706091147" />
+    <state width="1358" height="284" key="GridCell.Tab.0.center" timestamp="1601780167525">
       <screen x="-2506" y="-367" width="2506" height="1417" />
     </state>
-    <state width="1358" height="280" key="GridCell.Tab.0.center/-2506.-367.2506.1417/0.23.1680.1027@-2506.-367.2506.1417" timestamp="1599770295233" />
+    <state width="1358" height="284" key="GridCell.Tab.0.center/-2506.-367.2506.1417/0.23.1680.1027@-2506.-367.2506.1417" timestamp="1601780167525" />
+    <state width="1358" height="280" key="GridCell.Tab.0.center/-2506.-367.2506.1417/0.23.1680.1027@0.23.1680.1027" timestamp="1601743573150" />
     <state width="1358" height="280" key="GridCell.Tab.0.center/53.23.1627.1027@53.23.1627.1027" timestamp="1599692460714" />
-    <state width="1358" height="280" key="GridCell.Tab.0.center/54.23.1626.1027@54.23.1626.1027" timestamp="1599452938390" />
-    <state width="1358" height="280" key="GridCell.Tab.0.left" timestamp="1599770295233">
+    <state width="1358" height="280" key="GridCell.Tab.0.center/54.23.1626.1027@54.23.1626.1027" timestamp="1601706091146" />
+    <state width="1358" height="284" key="GridCell.Tab.0.left" timestamp="1601780167524">
       <screen x="-2506" y="-367" width="2506" height="1417" />
     </state>
-    <state width="1358" height="280" key="GridCell.Tab.0.left/-2506.-367.2506.1417/0.23.1680.1027@-2506.-367.2506.1417" timestamp="1599770295233" />
+    <state width="1358" height="284" key="GridCell.Tab.0.left/-2506.-367.2506.1417/0.23.1680.1027@-2506.-367.2506.1417" timestamp="1601780167524" />
+    <state width="1358" height="280" key="GridCell.Tab.0.left/-2506.-367.2506.1417/0.23.1680.1027@0.23.1680.1027" timestamp="1601743573149" />
     <state width="1358" height="280" key="GridCell.Tab.0.left/53.23.1627.1027@53.23.1627.1027" timestamp="1599692460713" />
-    <state width="1358" height="280" key="GridCell.Tab.0.left/54.23.1626.1027@54.23.1626.1027" timestamp="1599452938389" />
-    <state width="1358" height="280" key="GridCell.Tab.0.right" timestamp="1599770295234">
+    <state width="1358" height="280" key="GridCell.Tab.0.left/54.23.1626.1027@54.23.1626.1027" timestamp="1601706091145" />
+    <state width="1358" height="284" key="GridCell.Tab.0.right" timestamp="1601780167526">
       <screen x="-2506" y="-367" width="2506" height="1417" />
     </state>
-    <state width="1358" height="280" key="GridCell.Tab.0.right/-2506.-367.2506.1417/0.23.1680.1027@-2506.-367.2506.1417" timestamp="1599770295234" />
+    <state width="1358" height="284" key="GridCell.Tab.0.right/-2506.-367.2506.1417/0.23.1680.1027@-2506.-367.2506.1417" timestamp="1601780167526" />
+    <state width="1358" height="280" key="GridCell.Tab.0.right/-2506.-367.2506.1417/0.23.1680.1027@0.23.1680.1027" timestamp="1601743573150" />
     <state width="1358" height="280" key="GridCell.Tab.0.right/53.23.1627.1027@53.23.1627.1027" timestamp="1599692460714" />
-    <state width="1358" height="280" key="GridCell.Tab.0.right/54.23.1626.1027@54.23.1626.1027" timestamp="1599452938390" />
+    <state width="1358" height="280" key="GridCell.Tab.0.right/54.23.1626.1027@54.23.1626.1027" timestamp="1601706091147" />
+    <state width="1358" height="284" key="GridCell.Tab.1.bottom" timestamp="1601780167726">
+      <screen x="-2506" y="-367" width="2506" height="1417" />
+    </state>
+    <state width="1358" height="284" key="GridCell.Tab.1.bottom/-2506.-367.2506.1417/0.23.1680.1027@-2506.-367.2506.1417" timestamp="1601780167726" />
+    <state width="1358" height="280" key="GridCell.Tab.1.bottom/-2506.-367.2506.1417/0.23.1680.1027@0.23.1680.1027" timestamp="1601743573146" />
+    <state width="1358" height="280" key="GridCell.Tab.1.bottom/54.23.1626.1027@54.23.1626.1027" timestamp="1601706091148" />
+    <state width="1358" height="284" key="GridCell.Tab.1.center" timestamp="1601780167725">
+      <screen x="-2506" y="-367" width="2506" height="1417" />
+    </state>
+    <state width="1358" height="284" key="GridCell.Tab.1.center/-2506.-367.2506.1417/0.23.1680.1027@-2506.-367.2506.1417" timestamp="1601780167725" />
+    <state width="1358" height="280" key="GridCell.Tab.1.center/-2506.-367.2506.1417/0.23.1680.1027@0.23.1680.1027" timestamp="1601743573146" />
+    <state width="1358" height="280" key="GridCell.Tab.1.center/54.23.1626.1027@54.23.1626.1027" timestamp="1601706091148" />
+    <state width="1358" height="284" key="GridCell.Tab.1.left" timestamp="1601780167725">
+      <screen x="-2506" y="-367" width="2506" height="1417" />
+    </state>
+    <state width="1358" height="284" key="GridCell.Tab.1.left/-2506.-367.2506.1417/0.23.1680.1027@-2506.-367.2506.1417" timestamp="1601780167725" />
+    <state width="1358" height="280" key="GridCell.Tab.1.left/-2506.-367.2506.1417/0.23.1680.1027@0.23.1680.1027" timestamp="1601743573146" />
+    <state width="1358" height="280" key="GridCell.Tab.1.left/54.23.1626.1027@54.23.1626.1027" timestamp="1601706091147" />
+    <state width="1358" height="284" key="GridCell.Tab.1.right" timestamp="1601780167726">
+      <screen x="-2506" y="-367" width="2506" height="1417" />
+    </state>
+    <state width="1358" height="284" key="GridCell.Tab.1.right/-2506.-367.2506.1417/0.23.1680.1027@-2506.-367.2506.1417" timestamp="1601780167726" />
+    <state width="1358" height="280" key="GridCell.Tab.1.right/-2506.-367.2506.1417/0.23.1680.1027@0.23.1680.1027" timestamp="1601743573146" />
+    <state width="1358" height="280" key="GridCell.Tab.1.right/54.23.1626.1027@54.23.1626.1027" timestamp="1601706091148" />
+    <state x="679" y="300" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1601703614412">
+      <screen x="54" y="23" width="1626" height="1027" />
+    </state>
+    <state x="679" y="300" key="com.intellij.testIntegration.createTest.CreateTestDialog/54.23.1626.1027@54.23.1626.1027" timestamp="1601703614412" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -998,6 +1030,16 @@
           <url>file://$PROJECT_DIR$/src/Myclass.java</url>
           <line>3577</line>
           <option name="timeStamp" value="474" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/PureStorageTest.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="476" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/PureStorage.java</url>
+          <line>183</line>
+          <option name="timeStamp" value="478" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

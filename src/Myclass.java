@@ -3606,8 +3606,8 @@ public class Myclass {
         System.out.println(timeStampMillis/1000);
     }
     public void printEpoch() {
-        // utc time utc = pst + 7
         Instant instant = Instant.parse("2020-09-01T21:00:01.00Z");
+        // utc time utc = pst + 7
         System.out.println(instant.toEpochMilli() / 1000);
     }
     static class PairString{
