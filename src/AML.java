@@ -8,7 +8,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class AML {
-    public static final String FILE_NAME = "AML0814";
+    public static final String FILE_NAME = "AML1211";
     public void generateCommands() throws Exception {
         File file = new File("/Users/mingm/Downloads/" +
                 FILE_NAME +
@@ -42,6 +42,24 @@ public class AML {
 
         System.out.println("total count " + count);
         System.out.println(result + "will be generated");
+    }
+
+    public void createMultipleCsv(int n) throws Exception {
+        File file = new File("/Users/mingm/Downloads/12payments.csv");
+        File dirFile = new File("/Users/mingm/Downloads/12payments/" );
+        dirFile.mkdir();
+        BufferedReader br = new BufferedReader(new FileReader(file));
+        String str;
+        int i = 1;
+        while ((str = br.readLine()) != null) {
+            String newPath = "/Users/mingm/Downloads/12payments/" +
+                    i +
+                    ".csv";
+            i++;
+            FileWriter myWriter = new FileWriter(newPath);
+            myWriter.write(str);
+            myWriter.close();
+        }
     }
     public void dedupe() throws Exception {
         File file = new File("/Users/mingm/Downloads/" +

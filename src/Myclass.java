@@ -3595,11 +3595,25 @@ public class Myclass {
 
 
     public static void main (String[] args) throws Exception {
-        Myclass mc = new Myclass();
-        mc.printEpoch();
-        System.out.println(7*24*60*60);
+        AML aml = new AML();
+        aml.createMultipleCsv(12);
     }
-
+    public void hulk() {
+        String BASE_SELECT_QUERY = "SELECT "
+                + "credit_card_token, "
+                + "credit_card_id, "
+                + "app_id, "
+                + "status, "
+                + "schedule, "
+                + "last_update_time, "
+                + "card_type "
+                + "FROM chase_account_updater_credit_cards ";
+        System.out.println(BASE_SELECT_QUERY
+                + "WHERE status = "
+                + "1 "
+                + "ORDER BY (schedule - TIMESTAMPDIFF(DAY, last_update_time, NOW())) ASC "
+                + "LIMIT :limit" );
+    }
     public void printEpochNow() {
         Instant instant = Instant.now();
         long timeStampMillis = instant.toEpochMilli();

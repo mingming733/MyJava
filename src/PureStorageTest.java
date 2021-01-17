@@ -3,6 +3,7 @@ import sun.lwawt.macosx.CSystemTray;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.Semaphore;
 
 import static org.junit.Assert.*;
 
@@ -24,5 +25,14 @@ public class PureStorageTest {
         PureStorage ps = new PureStorage();
         List<List<PureStorage.TextBox>> result = ps.arrangeTextBox2(list, 10 );
         System.out.println(result);
+    }
+
+    @Test
+    public void testTest() throws Exception{
+        Semaphore notFull = new Semaphore(1);
+        notFull.release(99);
+        System.out.println("100 keys");
+        notFull.acquire(100);
+
     }
 }
