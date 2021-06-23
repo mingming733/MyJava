@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e55770b9-cc15-45b5-9a80-148e5675de70" name="Default" comment="m//t">
-      <change afterPath="$PROJECT_DIR$/src/ACT0019NOC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MultiWorker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ProducerConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/commons-lang3-3.12.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DFR.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/NocValidation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyJava/AML.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/AML.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MyJava/CoordComparator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/CoordComparator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MyJava/Coordinate1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/Coordinate1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MyJava/DataPoint.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/DataPoint.class" afterDir="false" />
@@ -18,22 +16,24 @@
       <change beforePath="$PROJECT_DIR$/out/production/MyJava/ListNodeComparator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/ListNodeComparator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MyJava/MatrixComparator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/MatrixComparator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MyJava/MyThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/MyThread.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyJava/Myclass$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/Myclass$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyJava/Myclass$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/Myclass$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyJava/Myclass$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/Myclass$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyJava/Myclass$Coordinate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/Myclass$Coordinate.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MyJava/Myclass$Coordination.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/Myclass$Coordination.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MyJava/Myclass$PairString.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/Myclass$PairString.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyJava/Myclass$Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/Myclass$Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyJava/Myclass$findMedianFromDataStream.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/Myclass$findMedianFromDataStream.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MyJava/Myclass.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/Myclass.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MyJava/NodeComparator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/NodeComparator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MyJava/Pair.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/Pair.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MyJava/Point2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/Point2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MyJava/Position.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/Position.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyJava/PureStorage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/PureStorage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyJava/PureStorageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/PureStorageTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MyJava/Rect.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/Rect.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MyJava/TreeLinkNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/TreeLinkNode.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MyJava/TreeNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/TreeNode.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MyJava/UnionFind.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/UnionFind.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AML.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AML.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Myclass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Myclass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PureStorageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PureStorageTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +62,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsGulpfileManager">
@@ -88,13 +96,13 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="project.structure.side.proportion" value="0.29690346" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/lib" />
@@ -104,8 +112,8 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/lib" />
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Myclass">
@@ -353,6 +361,7 @@
       <option name="DEPLOY_AS_INSTANT" value="false" />
       <option name="ARTIFACT_NAME" value="" />
       <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
       <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
       <option name="ACTIVITY_EXTRA_FLAGS" value="" />
       <option name="MODE" value="default_activity" />
@@ -365,14 +374,17 @@
       <Java />
       <Profilers>
         <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
         <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
         <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
       </Profilers>
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
-      <method v="2">
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2" />
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
       <option name="TESTING_TYPE" value="0" />
@@ -391,12 +403,14 @@
       <Java />
       <Profilers>
         <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
         <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
         <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
       </Profilers>
       <method v="2">
         <option name="Make" enabled="true" />
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration name="ACT0019NOC" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -457,34 +471,6 @@
     </configuration>
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
       <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <module name="" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -805,17 +791,17 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Myclass.java</url>
-          <line>1657</line>
+          <line>1656</line>
           <option name="timeStamp" value="145" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Myclass.java</url>
-          <line>1677</line>
+          <line>1676</line>
           <option name="timeStamp" value="148" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Myclass.java</url>
-          <line>1970</line>
+          <line>1969</line>
           <option name="timeStamp" value="157" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -840,7 +826,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Myclass.java</url>
-          <line>2089</line>
+          <line>2088</line>
           <option name="timeStamp" value="200" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -855,58 +841,58 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Myclass.java</url>
-          <line>2664</line>
+          <line>2663</line>
           <option name="timeStamp" value="267" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Myclass.java</url>
-          <line>2782</line>
+          <line>2781</line>
           <option name="timeStamp" value="274" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Myclass.java</url>
-          <line>2800</line>
+          <line>2799</line>
           <option name="timeStamp" value="276" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Myclass.java</url>
-          <line>2827</line>
+          <line>2826</line>
           <option name="timeStamp" value="281" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Myclass.java</url>
-          <line>2913</line>
+          <line>2912</line>
           <option name="timeStamp" value="283" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Myclass.java</url>
-          <line>2998</line>
+          <line>2997</line>
           <option name="timeStamp" value="297" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Myclass.java</url>
-          <line>3065</line>
+          <line>3064</line>
           <option name="timeStamp" value="298" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Myclass.java</url>
-          <line>3187</line>
+          <line>3186</line>
           <option name="timeStamp" value="302" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Myclass.java</url>
-          <line>3199</line>
+          <line>3198</line>
           <option name="timeStamp" value="303" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <condition expression="i==3" language="JAVA" />
           <url>file://$PROJECT_DIR$/src/Myclass.java</url>
-          <line>3307</line>
+          <line>3306</line>
           <option name="timeStamp" value="306" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Myclass.java</url>
-          <line>3388</line>
+          <line>3387</line>
           <option name="timeStamp" value="309" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -946,7 +932,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Myclass.java</url>
-          <line>3471</line>
+          <line>3470</line>
           <option name="timeStamp" value="361" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -991,7 +977,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Myclass.java</url>
-          <line>3577</line>
+          <line>3576</line>
           <option name="timeStamp" value="474" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

@@ -16,9 +16,8 @@ import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
-import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import java.util.stream.Collectors;
+import org.apache.commons.lang3.StringUtils;
 
 
 /**
@@ -3595,8 +3594,9 @@ public class Myclass {
 
 
     public static void main (String[] args) throws Exception {
-        AML aml = new AML();
-        aml.createMultipleCsv(12);
+        NocValidation readCsv = new NocValidation();
+        readCsv.insertMockingbirdValidation();
+
     }
     public void hulk() {
         String BASE_SELECT_QUERY = "SELECT "

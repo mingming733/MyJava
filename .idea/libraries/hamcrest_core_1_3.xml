@@ -2,6 +2,7 @@
   <library name="hamcrest-core-1.3">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/lib/hamcrest-core-1.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-lang3-3.12.0.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
