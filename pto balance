@@ -1,6 +1,0 @@
-Hi,
-I am employee from Wepay. We were tracking PTO and time way using BambooHR. But the data upload from Bamboo to me@jpmc was corrupted, so there are several discrepancies between BambooHR PTO balance and me@jpmc balance:
-1, The vacation balance in BambooHR is 178.2 but balance in me@jpmc is 125.78. There is only 1 PTO request in me@jpmc but not in bamboo, it is the 8 hour PTO on Oct 07, so the actual vacation balance I should have is 170.2. I have attached the screen shot of BambooHR and me@jpmc to show the difference.  
-2, The personal day should be 24 hours but in me@jpmc it is 12 hours.
-3, the sick time should be 60 hours but in me@jpmc it is 88 hours. 
-Could you please correct these balances. Thank you very much!
