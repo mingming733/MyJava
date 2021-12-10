@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="e55770b9-cc15-45b5-9a80-148e5675de70" name="Default" comment="m//t">
-      <change afterPath="$PROJECT_DIR$/lib/commons-lang3-3.12.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DFR.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NocValidation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MyJava/CoordComparator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/CoordComparator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MyJava/Coordinate1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/Coordinate1.class" afterDir="false" />
@@ -25,6 +26,7 @@
       <change beforePath="$PROJECT_DIR$/out/production/MyJava/Myclass$Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/Myclass$Solution.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MyJava/Myclass$findMedianFromDataStream.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/Myclass$findMedianFromDataStream.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MyJava/Myclass.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/Myclass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyJava/NocValidation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/NocValidation.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MyJava/NodeComparator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/NodeComparator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MyJava/Pair.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/Pair.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MyJava/Point2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/Point2.class" afterDir="false" />
@@ -34,6 +36,7 @@
       <change beforePath="$PROJECT_DIR$/out/production/MyJava/TreeNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/TreeNode.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MyJava/UnionFind.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/UnionFind.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Myclass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Myclass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NocValidation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NocValidation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -362,6 +365,7 @@
       <option name="ARTIFACT_NAME" value="" />
       <option name="PM_INSTALL_OPTIONS" value="" />
       <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
       <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
       <option name="ACTIVITY_EXTRA_FLAGS" value="" />
       <option name="MODE" value="default_activity" />
@@ -989,6 +993,11 @@
           <url>file://$PROJECT_DIR$/src/PureStorage.java</url>
           <line>183</line>
           <option name="timeStamp" value="478" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/NocValidation.java</url>
+          <line>95</line>
+          <option name="timeStamp" value="480" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

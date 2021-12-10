@@ -3594,8 +3594,12 @@ public class Myclass {
 
 
     public static void main (String[] args) throws Exception {
-        NocValidation readCsv = new NocValidation();
-        readCsv.insertMockingbirdValidation();
+//        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MMDDYYYY");
+//        System.out.println(LocalDate.now().format(formatter));
+
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MMddyyyy");
+        System.out.println(LocalDate.now().format(formatter));
+
 
     }
     public void hulk() {

@@ -87,6 +87,19 @@ public class NocValidation {
             sb.append("),");
             System.out.println(sb);
         }
-
+    }
+    public void dedupe() throws Exception {
+        File file = new File("/Users/mingm/Downloads/noc_payments.csv" );
+        BufferedReader br = new BufferedReader(new FileReader(file));
+        String str;
+        HashSet<String> set = new HashSet<>();
+        while ((str = br.readLine()) != null) {
+            String[] data = str.split(",");
+            if (set.contains(data[1])) {
+                System.out.println(str);
+            } else {
+                set.add(data[1]);
+            }
+        }
     }
 }
