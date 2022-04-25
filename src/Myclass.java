@@ -3594,13 +3594,15 @@ public class Myclass {
 
 
     public static void main (String[] args) throws Exception {
-//        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MMDDYYYY");
-//        System.out.println(LocalDate.now().format(formatter));
-
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MMddyyyy");
-        System.out.println(LocalDate.now().format(formatter));
-
-
+        String condition = "S";
+        switch(condition) {
+            case "S":
+            case "C":
+                System.out.println("C");
+                break;
+            case "D":
+                System.out.println("D");
+        }
     }
     public void hulk() {
         String BASE_SELECT_QUERY = "SELECT "

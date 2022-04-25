@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e55770b9-cc15-45b5-9a80-148e5675de70" name="Default" comment="m//t">
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MyJava/CoordComparator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/CoordComparator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MyJava/Coordinate1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/Coordinate1.class" afterDir="false" />
@@ -17,16 +18,9 @@
       <change beforePath="$PROJECT_DIR$/out/production/MyJava/ListNodeComparator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/ListNodeComparator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MyJava/MatrixComparator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/MatrixComparator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MyJava/MyThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/MyThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyJava/Myclass$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/Myclass$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyJava/Myclass$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/Myclass$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyJava/Myclass$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/Myclass$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyJava/Myclass$Coordinate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/Myclass$Coordinate.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MyJava/Myclass$Coordination.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/Myclass$Coordination.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MyJava/Myclass$PairString.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/Myclass$PairString.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyJava/Myclass$Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/Myclass$Solution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyJava/Myclass$findMedianFromDataStream.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/Myclass$findMedianFromDataStream.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MyJava/Myclass.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/Myclass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyJava/NocValidation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/NocValidation.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MyJava/NodeComparator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/NodeComparator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MyJava/Pair.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/Pair.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MyJava/Point2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/Point2.class" afterDir="false" />
@@ -36,7 +30,6 @@
       <change beforePath="$PROJECT_DIR$/out/production/MyJava/TreeNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/TreeNode.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MyJava/UnionFind.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyJava/UnionFind.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Myclass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Myclass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NocValidation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NocValidation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +72,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="1SZJIjriT06yYjbCMxvS96r2XDb" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -96,7 +92,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.29690346" />
@@ -755,7 +751,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
